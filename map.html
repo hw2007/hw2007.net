@@ -1,0 +1,47 @@
+<!doctype html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html>
+	<head>
+		<!-- Use style.css as our default stylesheet -->
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<!-- Set the page title to appear in the browser tab -->
+		<title>hw2007 | Server Map</title>
+		<link rel="icon" href="assets/favicon.png" type="image/x-icon" />
+	</head>
+	<body style="overflow: hidden">
+		<!-- Back button -->
+		<p style="
+			position: absolute; 
+			top: -10px; 
+			padding: 10px">
+			<a class="small" href="index.html">
+				<span class="large-view"><< Back to hw2007.net</span>
+				<span class="small-view"><< Back</span>
+			</a>
+		</p>
+
+		<!-- Title -->
+		<p class="small" style="text-align: center;">
+			<b>Server Map</b>
+		</p>
+
+		<!-- Embedded map site -->
+		<div
+			style="
+			position: absolute;
+			top: 60px;
+			bottom: 0px;
+			left: 0px;
+			width: 100%;
+			height: calc(100%-1px);">
+			<iframe
+				src="/map/"
+				style="
+				border: none; 
+				outline: none; 
+				width: 100%; 
+				height: 100%">
+			</iframe>
+		</div>
+	</body>
+</html>

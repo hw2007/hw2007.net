@@ -1,0 +1,57 @@
+@font-face {
+	font-family: "Tiny5";
+	src: url("assets/tiny5.ttf") format("truetype");
+}
+
+.large-view {
+	display: inline-block;
+}
+
+.small-view {
+	display: none;
+}
+
+@media screen and (max-width: 530px) {
+	.large-view {
+		display: none;
+	}
+
+	.small-view {
+		display: inline-block;
+	}
+}
+
+body {
+	background-color: black;
+	color: white;
+	font-family: "Tiny5", serif;
+}
+
+a {
+	color: #2f94d8; /* Light blue color */
+	text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+	color: #613692; /* Purple color */
+}
+
+.rainbow span {
+	color: white; /* Default white color */
+}
+
+.rainbow span:nth-child(1) {
+	color: #2f94d8; /* Light blue color */
+}
+
+.rainbow span:nth-child(2) {
+	color: #0021b3; /* Blue color */
+}
+
+.rainbow span:nth-child(3) {
+	color: #613692; /* Purple color */
+}
+
+.small {
+	font-size: 20px;
+}
