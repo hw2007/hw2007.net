@@ -36,10 +36,6 @@ a:hover {
 	color: #613692; /* Purple color */
 }
 
-.rainbow span {
-	color: white; /* Default white color */
-}
-
 .rainbow span:nth-child(1) {
 	color: #2f94d8; /* Light blue color */
 }
