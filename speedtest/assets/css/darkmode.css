@@ -1,5 +1,5 @@
 body {
-  background-color: #181818;
+  background-color: black;
 }
 #ipDesk {
   fill: aliceblue;
@@ -28,13 +28,13 @@ body {
 }
 
 .main-Gaugebg {
-  stroke: #000000;
+  stroke: #404040;
 }
 .uiBg {
   fill: #000000;
 }
 .progressbg {
-  stroke: #202020;
+  stroke: #404040;
 }
 .jitter-Mob {
   fill: #ffffff;

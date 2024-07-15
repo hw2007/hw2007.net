@@ -1,40 +1,7 @@
 /* roboto-regular - latin */
 @font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("..fonts/roboto-v30-latin-regular.eot"); /* IE9 Compat Modes */
-  src: local(""),
-    url("../fonts/roboto-v30-latin-regular.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/roboto-v30-latin-regular.woff2")
-      format("woff2"),
-    /* Super Modern Browsers */
-      url("../fonts/roboto-v30-latin-regular.woff") format("woff"),
-    /* Modern Browsers */ url("../fonts/roboto-v30-latin-regular.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */
-      url("../fonts/roboto-v30-latin-regular.svg#Roboto") format("svg"); /* Legacy iOS */
-}
-/* roboto-500 - latin */
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("assets/fonts/roboto-v30-latin-500.eot"); /* IE9 Compat Modes */
-  src: local(""),
-    url("assets/fonts/roboto-v30-latin-500.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/roboto-v30-latin-500.woff2")
-      format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/roboto-v30-latin-500.woff")
-      format("woff"),
-    /* Modern Browsers */ url("../fonts/roboto-v30-latin-500.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */
-      url("../fonts/roboto-v30-latin-500.svg#Roboto") format("svg"); /* Legacy iOS */
+	font-family: "Tiny5";
+	src: url("../../../assets/tiny5.ttf") format("truetype");
 }
 
 body {
@@ -52,10 +19,10 @@ html {
 }
  
 .Credits {
-color: rgb(125 119 119);
+color: rgb(255, 0, 0);
 text-align: center;
 font-size:14px;
-font-family: Roboto-Medium, Roboto;
+font-family: "Tiny5", Serif;
 font-weight: 500;
 } 
 .Credits a {
@@ -108,13 +75,13 @@ color: #14b0fe;
 .oDo-Meter {
   font-size: 16.633283615112305px;
   fill: gray;
-  font-family: Roboto-Medium, Roboto;
+  font-family: "Tiny5", Serif;
   font-weight: 500;
 }
 .oDoLive-Speed {
   font-size: 28px;
   fill: #201e1e;
-  font-family: Roboto-Medium, Roboto;
+  font-family: "Tiny5", Serif;
   font-weight: 500;
   text-anchor: middle;
 }
@@ -122,7 +89,7 @@ color: #14b0fe;
 .oDoLive-Status {
   font-size: 10px;
   fill: #d2d1d2;
-  font-family: Roboto-Medium, Roboto;
+  font-family: "Tiny5", Serif;
   font-weight: 500;
   text-anchor: middle;
 }
@@ -146,27 +113,27 @@ color: #14b0fe;
 .rtext {
   font-size: 12px;
   fill: #333;
-  font-family: Roboto-Medium, Roboto;
+  font-family: "Tiny5", Serif;
   font-weight: 500;
 }
 .rtextnum {
   font-size: 23px;
   fill: #201e1e;
-  font-family: Roboto-Medium, Roboto;
+  font-family: "Tiny5", Serif;
   font-weight: 500;
   text-anchor: middle;
 }
 .rtextmbms {
   font-size: 12px;
-  fill: #5f5f5f;
-  font-family: Roboto-Medium, Roboto;
+  fill: gray;
+  font-family: "Tiny5", Serif;
   font-weight: 500;
   text-anchor: middle;
 }
 .jitter-Mob {
   font-size: 9px;
-  fill: #5f5f5f;
-  font-family: Roboto-Medium, Roboto;
+  fill: gray;
+  font-family: "Tiny5", Serif;
   font-weight: 500;
   text-anchor: middle;
 }
@@ -180,13 +147,13 @@ color: #14b0fe;
 .buttonTxt {
   font-size: 40px;
   fill: #ffffff;
-  font-family: Roboto-Medium, Roboto;
+  font-family: "Tiny5", Serif;
   font-weight: 500;
   text-anchor: middle;
 }
 
 .intro-Progress {
-  stroke: #56c4fb;
+  stroke: #2f94d8;
   stroke-width: 8px;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -194,7 +161,7 @@ color: #14b0fe;
   stroke-dashoffset: 0;
 }
 .progressElmstart {
-  stroke: #56c4fb;
+  stroke: #2f94d8;
   stroke-width: 8px;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -241,31 +208,31 @@ color: #14b0fe;
 .oDoTop-Speed {
   font-size: 16.96px;
   fill: gray;
-  font-family: Roboto-Medium, Roboto;
+  font-family: "Tiny5", Serif;
   font-weight: 500;
   text-anchor: end;
 }
 #upSymbolDesk {
-  fill: #14b0fe;
+  fill: #2f94d8;
   display: none;
 }
 #downSymbolDesk {
-  fill: #14b0fe;
+  fill: #2f94d8;
   display: none;
 }
 #upSymbolMob {
-  fill: #14b0fe;
+  fill: #2f94d8;
   display: none;
 }
 #downSymbolMob {
-  fill: #14b0fe;
+  fill: #2f94d8;
   display: none;
 }
 
 #ipMob {
   font-size: 15px;
   fill: #201e1e;
-  font-family: Roboto-Medium, Roboto;
+  font-family: "Tiny5", Serif;
   font-weight: 500;
   text-anchor: middle;
   display: none;
@@ -273,7 +240,7 @@ color: #14b0fe;
 #ipDesk {
   font-size: 15px;
   fill: #201e1e;
-  font-family: Roboto-Medium, Roboto;
+  font-family: "Tiny5", Serif;
   font-weight: 500;
   text-anchor: middle;
   display: none;
