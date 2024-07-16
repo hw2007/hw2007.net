@@ -12,6 +12,7 @@ const messages = [
 	"brought to you by hw2007 and chatgpt!",
 	"engage!",
 	"welcome, traveller!",
+	"there are four lights!"
 ];
 
 // Function to display a random message
