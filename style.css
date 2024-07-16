@@ -66,3 +66,11 @@ a:hover {
 	top: 0px;
 	padding-left: 15px;
 }
+
+.header {
+	font-size: 60px;
+	padding-top: 80px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-weight: bold;
+}
