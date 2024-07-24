@@ -11,7 +11,7 @@
 	display: none;
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 600px) {
 	.large-view {
 		display: none;
 	}
@@ -69,7 +69,7 @@ a:hover {
 
 .header {
 	font-size: 60px;
-	padding-top: 80px;
+	padding-top: 60px;
 	padding-left: 20px;
 	padding-right: 20px;
 	font-weight: bold;
