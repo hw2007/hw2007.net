@@ -9,27 +9,6 @@
 		<link rel="icon" href="assets/favicon.png" type="image/x-icon" />
 	</head>
 	<body style="overflow: hidden">
-		<!-- Back button -->
-		<p class="back">
-			<a class="small" href="/">
-				<span class="large-view"><< Back to hw2007.net</span>
-				<span class="small-view"><< Back</span>
-			</a>
-		</p>
-
-		<p style="
-			position: absolute;
-			right: 0px;
-			padding: 0px;
-			top: 0px;
-			padding-right: 15px;
-		">
-			<a class="small" href="fullmap.html">
-				<span class="large-view">Enter expanded view</span>
-				<span class="small-view">Expand</span>
-			</a>
-		</p>
-
 		<!-- Title -->
 		<p class="small" style="text-align: center;">
 			<b>Server Map</b>
@@ -39,13 +18,13 @@
 		<div
 			style="
 			position: absolute;
-			top: 60px;
+			top: 0px;
 			bottom: 0px;
 			left: 0px;
 			width: 100%;
-			height: calc(100%-1px);">
+			height: 100%">
 			<iframe
-				src="/map/"
+				src="https://hw2007.net/map/"
 				style="
 				border: none; 
 				outline: none; 
@@ -53,5 +32,23 @@
 				height: 100%">
 			</iframe>
 		</div>
+
+		<p style="
+			position: absolute;
+			left: 0px;
+			padding: 0px;
+			bottom: -10px;
+			margin-left: 5px;
+			background-color: black;
+			border-style: solid;
+			border-width: 10px;
+			border-color: black;
+			border-radius: 10px;
+		">
+			<a class="small" href="map.html">
+				<span class="large-view">Exit expanded view</span>
+				<span class="small-view">Shrink</span>
+			</a>
+		</p>
 	</body>
 </html>
