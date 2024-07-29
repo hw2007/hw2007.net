@@ -18,20 +18,6 @@
 			</a>
 		</p>
 
-		<!-- Expand button -->
-		<p style="
-			position: absolute;
-			right: 0px;
-			padding: 0px;
-			top: 0px;
-			padding-right: 15px;
-		">
-			<button class="small" id="expand" href="fullmap.html">
-				<span class="large-view">Enter expanded view</span>
-				<span class="small-view">Expand</span>
-			</button>
-		</p>
-
 		<!-- Title -->
 		<p class="small" style="text-align: center;">
 			<b>Server Map</b>
@@ -40,8 +26,6 @@
 		<!-- Embedded map site -->
 		<div id="map"
 			style="
-			position: absolute;
-			top: 60px;
 			bottom: 0px;
 			left: 0px;
 			width: 100%;
@@ -56,19 +40,18 @@
 			</iframe>
 		</div>
 
-		<!-- Shrink button -->
-		<p id="shrink-container" style="
-			display: none;
+		<!-- Expand/shrink button -->
+		<p style="
 			position: absolute;
-			left: 50%;
-            transform: translateX(-50%);
+			left: 10px;
 			bottom: -6px;
 			border: solid;
 			border-width: 8px;
 			border-color: black;
 			border-radius: 8px;
 		">
-			<button class="small" id="shrink">Exit expanded view</button>
+			<button class="small" id="expand" style="width: 180px;">Enter expanded view</button>
+			<button class="small" id="shrink" style="display: none; width: 180px;">Leave expanded view</button>
 		</p>
 
 		<!-- Load javascript files after body to ensure the site completes loading before js runs -->

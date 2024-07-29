@@ -48,6 +48,10 @@ button:hover {
 	color: #613692;
 }
 
+button:active {
+	color: #2f94d8;
+}
+
 a {
 	color: #2f94d8; /* Light blue color */
 	text-decoration: none; /* Remove underline */
@@ -86,4 +90,10 @@ a:hover {
 	padding-left: 20px;
 	padding-right: 20px;
 	font-weight: bold;
+}
+
+#map {
+	position: absolute;
+	top: 60px;
+	transition: top 0.15s ease;
 }
