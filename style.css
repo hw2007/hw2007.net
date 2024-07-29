@@ -28,11 +28,24 @@ body {
 	padding: 0;
 	background-color: black;
 	color: white;
-	font-family: "Tiny5", serif;
 }
 
 html {
 	color-scheme: dark;
+	font-family: "Tiny5", serif;
+}
+
+button {
+	font-family: "Tiny5", serif;
+	padding: 0;
+	background-color: black;
+	border: none;
+	color: #2f94d8;
+	cursor: pointer;
+}
+
+button:hover {
+	color: #613692;
 }
 
 a {
