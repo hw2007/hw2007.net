@@ -6,56 +6,50 @@
 		<!-- Use style.css as our default stylesheet -->
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<!-- Set the page title to appear in the browser tab -->
-		<title>hw2007 | Server Map</title>
+		<title id="title">hw2007 | Game</title>
 		<link rel="icon" href="assets/favicon.png" type="image/x-icon" />
 	</head>
-	<body style="overflow: hidden">
+	<body>
 		<!-- Back button -->
 		<p class="back">
-			<a href="/">
-				<span class="large-view"><< Back to hw2007.net</span>
+			<a href="arcade.html">
+				<span class="large-view"><< Back to arcade</span>
 				<span class="small-view"><< Back</span>
 			</a>
 		</p>
 
 		<!-- Title -->
 		<p style="text-align: center;">
-			<b>Server Map</b>
+			<b id="name">Game</b>
 		</p>
 
-		<!-- Embedded map site -->
-		<div id="map"
+		<!-- Embedded game -->
+		<div id="game-container"
 			style="
-			top: 60px;
 			bottom: 0px;
 			left: 0px;
-			width: 100%;
-		">
-			<iframe
-				src="/map/"
+			width: 100%; 
+            height: 100vh; 
+        ">
+			<iframe id="game" allowfullscreen allow="fullscreen"
 				style="
 				border: none; 
 				outline: none; 
 				width: 100%; 
-				height: 100%;">
+				height: 100%">
 			</iframe>
 		</div>
 
-		<!-- Expand/shrink button -->
-		<p style="
-			position: absolute;
-			left: 10px;
-			bottom: -6px;
-			border: solid;
-			border-width: 8px;
-			border-color: black;
-			border-radius: 8px;
-		">
-			<button id="expand" style="width: 180px;">Enter expanded view</button>
-			<button id="shrink" style="display: none; width: 180px;">Leave expanded view</button>
-		</p>
-
 		<!-- Load javascript files after body to ensure the site completes loading before js runs -->
-		<script src="js/map-expand.js"></script>
+		<script src="js/game-viewer.js"></script>
+        <script>
+            function setHeight() {
+                const gameContainer = document.getElementById("game-container");
+                gameContainer.style.height = (window.innerHeight - 70) + "px";
+            }
+
+            window.addEventListener("resize", setHeight);
+            window.addEventListener("load", setHeight);
+        </script>
 	</body>
 </html>

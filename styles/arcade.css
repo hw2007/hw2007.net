@@ -1,0 +1,42 @@
+.grid-item {
+    position: relative;
+    background-image: url("/assets/arcade-hires.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+    transition: scale 0.15s ease;
+}
+
+.grid-item:hover {
+    background-image: url("/assets/arcade-hires.gif");
+    color: white;
+    scale: 1.05;
+}
+
+.grid-item:active {
+    scale: 1;
+    transition: scale 0s ease;
+}
+
+.thumbnail {
+    position: absolute;
+    width: 128px;
+    height: 100px;
+    top: 63px;
+    left: 35px;
+    border: solid;
+    border-color: gray;
+}
+
+.name {
+    margin-top: 6px;
+    color: #2f94d8
+}
+
+.info {
+    margin-top: 202px;
+    color: white;
+    margin-left: 10px;
+    margin-right: 6px;
+    text-align: left;
+}
