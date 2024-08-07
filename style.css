@@ -1,3 +1,10 @@
+:root {
+	--lightblue: #0099ff;
+	--blue: #002fff;
+	--purple: #7e15db;
+}
+
+
 @font-face {
 	font-family: "Tiny5";
 	src: url("assets/tiny5.ttf") format("truetype");
@@ -42,37 +49,37 @@ button {
 	padding: 0;
 	background-color: black;
 	border: none;
-	color: #2f94d8;
+	color: var(--lightblue);
 	cursor: pointer;
 }
 
 button:hover {
-	color: #613692;
+	color: var(--purple);
 }
 
 button:active {
-	color: #2f94d8;
+	color: var(--lightblue);
 }
 
 a {
-	color: #2f94d8; /* Light blue color */
+	color: var(--lightblue); /* Light blue color */
 	text-decoration: none; /* Remove underline */
 }
 
 a:hover {
-	color: #613692; /* Purple color */
+	color: var(--purple); /* Purple color */
 }
 
 .rainbow span:nth-child(1) {
-	color: #2f94d8; /* Light blue color */
+	color: var(--lightblue); /* Light blue color */
 }
 
 .rainbow span:nth-child(2) {
-	color: #0021b3; /* Blue color */
+	color: var(--blue); /* Blue color */
 }
 
 .rainbow span:nth-child(3) {
-	color: #613692; /* Purple color */
+	color: var(--purple); /* Purple color */
 }
 
 .small {

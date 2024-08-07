@@ -9,7 +9,7 @@
 		<title id="title">hw2007 | Game</title>
 		<link rel="icon" href="assets/favicon.png" type="image/x-icon" />
 	</head>
-	<body style="overflow: hidden">
+	<body style="overflow: hidden;">
 		<!-- Back button -->
 		<p class="back">
 			<a href="arcade.html">
@@ -29,14 +29,14 @@
 			bottom: 0px;
 			left: 0px;
 			width: 100%; 
-            height: 100vh; 
+            height: 100vh;
         ">
-			<iframe id="game" allowfullscreen allow="fullscreen"
-				style="
+			<iframe id="game" allowtransparency="true" allowfullscreen style="
 				border: none; 
-				outline: none; 
-				width: 100%; 
-				height: 100%">
+				outline: none;
+				width: 100%;
+				height: 100%;
+			">
 			</iframe>
 		</div>
 
@@ -45,7 +45,7 @@
         <script>
             function setHeight() {
                 const gameContainer = document.getElementById("game-container");
-                gameContainer.style.height = (window.innerHeight - 70) + "px";
+                gameContainer.style.height = (window.innerHeight - 68) + "px";
             }
 
             window.addEventListener("resize", setHeight);

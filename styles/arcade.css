@@ -3,14 +3,15 @@
     background-image: url("/assets/arcade-hires.png");
     background-size: contain;
     background-repeat: no-repeat;
-    color: white;
+    color: var(--lightblue);
     transition: scale 0.15s ease;
 }
 
 .grid-item:hover {
     background-image: url("/assets/arcade-hires.gif");
-    color: white;
+    color: var(--purple);
     scale: 1.05;
+    transition: scale 0.15s ease;
 }
 
 .grid-item:active {
@@ -22,15 +23,12 @@
     position: absolute;
     width: 128px;
     height: 100px;
-    top: 63px;
-    left: 35px;
-    border: solid;
-    border-color: gray;
+    top: 64px;
+    left: 36px;
 }
 
 .name {
     margin-top: 6px;
-    color: #2f94d8
 }
 
 .info {

@@ -17,6 +17,6 @@ if (gameName) {
     document.getElementById("name").textContent = gameName;
     document.getElementById("title").textContent = "hw2007 | " + gameName;
 } else {
-    document.getElementById("name").textContent = "Nameless One";
+    document.getElementById("name").textContent = "Game";
     document.getElementById("title").textContent = "hw2007 | Game";
 }
