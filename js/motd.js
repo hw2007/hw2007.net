@@ -36,7 +36,8 @@ const messages = [
 	"engage!",
 	"welcome, traveller!",
 	"there are four lights!",
-	`hello, ${getOS()} user! :)`
+	`hello, ${getOS()} user! :)`,
+	"live long and prosper!"
 ];
 
 // Function to display a random message

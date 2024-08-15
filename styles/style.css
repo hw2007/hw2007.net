@@ -7,7 +7,7 @@
 
 @font-face {
 	font-family: "Tiny5";
-	src: url("assets/tiny5.ttf") format("truetype");
+	src: url("/assets/tiny5.ttf") format("truetype");
 }
 
 .large-view {
