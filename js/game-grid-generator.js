@@ -1,5 +1,11 @@
 const games = [
     {
+        name: "Pixel Studio",
+        info: "A simple pixel art editor.",
+        img: "pixelstudio",
+        url: "turboembed.html?url=" + encodeURIComponent("https://turbowarp.org/979801800/embed?autoplay&fullscreen-background=black")
+    },
+    {
         name: "Over Yonder",
         info: "Find your friends who got lost in the forest!",
         img: "overyonder",
