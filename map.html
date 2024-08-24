@@ -27,14 +27,18 @@
 		</p>
 
 		<!-- Embedded map site -->
-		<div id="map"
+		<div
+			id="container"
 			style="
+			position: absolute;
 			top: 60px;
+			transition: top 0.15s ease;
 			bottom: 0px;
 			left: 0px;
 			width: 100%;
 		">
 			<iframe
+				id="map"
 				src="/map/"
 				style="
 				border: none; 

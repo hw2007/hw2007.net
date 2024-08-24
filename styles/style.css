@@ -100,9 +100,3 @@ a:hover {
 	padding-right: 20px;
 	font-weight: bold;
 }
-
-#map {
-	position: absolute;
-	top: 60px;
-	transition: top 0.15s ease;
-}
