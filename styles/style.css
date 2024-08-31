@@ -70,18 +70,6 @@ a:hover {
 	color: var(--purple); /* Purple color */
 }
 
-.rainbow span:nth-child(1) {
-	color: var(--lightblue); /* Light blue color */
-}
-
-.rainbow span:nth-child(2) {
-	color: var(--blue); /* Blue color */
-}
-
-.rainbow span:nth-child(3) {
-	color: var(--purple); /* Purple color */
-}
-
 .small {
 	font-size: 20px;
 }

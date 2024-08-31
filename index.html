@@ -5,6 +5,7 @@
 	<head>
 		<!-- Use style.css as our default stylesheet -->
 		<link rel="stylesheet" type="text/css" href="styles/style.css" />
+		<link rel="stylesheet" type="text/css" href="styles/index.css" />
 		<!-- Link to javascript files -->
 		<script src="js/motd.js"></script>
 		<!-- Set the page title to appear in the browser tab -->
@@ -18,28 +19,11 @@
 		<p><i id="motd">.</i></p>
 
 		<!-- Links -->
-		<section style="padding-bottom: 80px">
+		<section id="link-container" style="padding-bottom: 80px">
 			<p style="padding-top: 80px;"><b>All the links!</b></p>
-			
-			<p><a href="arcade.html">
-				>> 🕹️ Arcade <<
-			</a></p>
-
-			<p><a href="map.html">
-				>> 🌎 Minecraft Server Map <<
-			</a></p>
-
-			<p><a href="downloads.html">
-				>> 📁 Minecraft Server Downloads <<
-			</a></p>
-			
-			<p><a href="speedtest.html">
-				>> ⚡ Internet Speed Test <<
-			</a></p>
-
-			<p><a href="changelogs.html">
-				>> 📄 Site Changelogs <<
-			</a></p>
+			<!-- Links are filled out by generate_index_links.js -->
 		</section>
+
+		<script src="js/generate_index_links.js"></script>
 	</body>
 </html>
