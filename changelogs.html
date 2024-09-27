@@ -5,8 +5,9 @@
 	<head>
 		<!-- Use style.css as our default stylesheet -->
 		<link rel="stylesheet" type="text/css" href="styles/style.css" />
+		<link rel="stylesheet" type="text/css" href="styles/changelogs.css" />
 		<!-- Set the page title to appear in the browser tab -->
-		<title>hw2007 | Changelogs</title>
+		<title>Changelogs - hw2007.net</title>
 		<link rel="icon" href="assets/favicon.png" type="image/x-icon" />
 	</head>
 	<body>
@@ -16,125 +17,30 @@
 		</p>
 
 		<!-- Title area -->
-		<section style="text-align: center;">
-			<p class="header">Changelogs</p>
-			<p><i id="motd">update history & writeups for this website.</i></p>
-		</section>
+		<p class="header">Changelogs</p>
+		<p><i>update history & writeups for this website.</i></p>
 
 		<!-- Changelogs -->
-		<section style="
+		<div id="update-container" style="
 			text-align: left;
-			padding-bottom: 40px;
-			padding-top: 40px;
-			padding-left: 40px;
-			padding-right: 40px;
+			padding-left: var(--pad2);
+			padding-right: var(--pad2);
 			max-width: 800px;
 			margin: auto;
-			">
+		">
+			<!-- Changelogs are dynamically generated on load -->
+		</div>
 
-			<p style="padding-top: 20px; text-align: center;">
-				<b>August 21, 2024</b>
-			</p>
-			<p>
-				-> Added Pixel Studio to the arcade.
-			</p>
+		<p style="padding-top: var(--pad4);">
+			<b>Thanks for visiting! :-)</b><br>
+			<span style="color: gray">
+				Font: Tiny5 by Stefan Schmidt<br>
+				Speedtest: OpenSpeedTest<br>
+				Server map: BlueMap<br>
+				Site version: 2024.9.26.1
+			</span>
+		</p>
 
-			<p style="padding-top: 20px; text-align: center;">
-				<b>August 14, 2024</b>
-			</p>
-			<p>
-				-> Added a new server world download for August 13th.<br>
-				-> Added a password requirment to the downloads page.<br>
-				-> Added an exact site version number at the bottom of the changelogs page.<br>
-				-> Added "live long and prosper!" as a possible splash text.<br>
-				-> Updated colors on the speedtest to match the new colors added in the last update.
-			</p>
-
-			<p style="padding-top: 20px; text-align: center;">
-				<b>August 7, 2024</b>
-			</p>
-			<p>
-				-> Fixed a bug with arcade machines where if upon hovering one for the first time, the machine's image would briefly disappear.<br>
-				-> Made the joystick & buttons of arcade machines red instead of purple & blue, and added shading to joystick & buttons.<br>
-				-> Other small tweaks to arcade machines such as removing gray border on thumbnail, and adding a purple hover on the game title.<br>
-				-> Tweaked sitewide light blue, blue, purple color scheme to be more contrasting & bright.<br>
-				-> Replaced the enter/leave expanded view text in the map page with an expand/shrink icon.<br>
-				-> Added "Thanks for visiting! :-)" text at bottom of changelogs page<br>
-				-> Added a bunch of my scratch games to the arcade page, such as Exploding Physics Playground, Sky High, SwipeCars, and more!
-			</p>
-
-			<p style="padding-top: 20px; text-align: center;">
-				<b>July 31, 2024</b>
-			</p>
-			<p>
-				-> Added the brand new ARCADE page!<br>
-				-> The arcade page contains every web game I have made (five in total), with more to come every time I make a game!<br>
-				-> The page is styled like an actual arcade, with each game being a clickable arcade machine.<br>
-				-> Every machine has a title, thumbnail, and short description for the game.
-			</p>
-
-			<p style="padding-top: 20px; text-align: center;">
-				<b>July 29, 2024</b>
-			</p>
-			<p>
-				-> Fixed the dates in the changelogs page all being in June (they should have all been July).<br>
-				-> Moved the enter/exit expanded view buttons on the map page to the bottom-left of the map view.<br>
-				-> Changed "Exit expanded view" to "Leave expanded view" on the map page.<br>
-				-> Added an animation when toggling expanded view.<br>
-				-> Added a click effect on buttons.
-			</p>
-
-			<p style="padding-top: 20px; text-align: center;">
-				<b>July 28, 2024</b>
-			</p>
-			<p>
-				-> Made the expanded view on the map page more intuitive. Instead of redirecting to a new page and reloading the map, it now nicely hides the top bar without needing to reload, and you can stay in the exact same place on the map as you were before reloading.<br>
-				-> Moved the "Exit expanded view" button to the bottom-center of the page, and gave it rounded borders.
-			</p>
-
-			<p style="padding-top: 20px; text-align: center;">
-				<b>July 24, 2024</b>
-			</p>
-			<p>
-				-> Removed some padding on the top of the page for better viewing on mobile.<br>
-				-> Replaced the server map with something new! Previously, I was using <a href="https://modrinth.com/plugin/dynmap">Dynmap</a> for the map, but now I have switched to <a href="https://bluemap.bluecolored.de/">BlueMap</a>, which gives a fancy 3D view of the server, rather than a 2D image.<br>
-				-> NOTE: You may need to clear your browser cache to get the new map working initially! <br>
-				-> Added the "Enter expanded view" button in the map page which allows you to open the map without the top UI bar.
-			</p>
-
-			<p style="padding-top: 20px; text-align: center;">
-				<b>July 16, 2024</b>
-			</p>
-			<p>
-				-> Made the speedtest page work better on different screen sizes.<br>
-				-> Put the scrollbar into dark mode.<br>
-				-> Added another splash text!
-			</p>
-
-			<p style="padding-top: 20px; text-align: center;">
-				<b>July 15, 2024</b>
-			</p>
-			<p>
-				-> Added changelogs page.<br>
-				-> Change internet speed test button icon from 🛜 to ⚡️.<br>
-				-> Fixed title of speed test page in browser tab being "Server Downloads." It has now been changed to "Speed Test."<br>
-				-> Added another splash text :)<br>
-				-> Changed the padding an the bottom of most pages. The main page now has a lot more, and other pages just have slightly more.
-			</p>
-
-			<p style="padding-top: 20px; text-align: center;">
-				<b>July 14, 2024</b>
-			</p>
-			<p>
-				-> Added speed test page using <a href="https://openspeedtest.com/">OpenSpeedTest</a>! You can now test the speed of your connection to my server using that page.<br>
-				-> Changed server downloads page to include a small subtitle to match the main page better.<br>
-				-> Added a few more splash texts :)
-			</p>
-
-			<p style="padding-top: 80px; text-align: center;">
-				<b>Thanks for visiting! :-)</b><br>
-				<span style="color: gray">Site version: 2024.8.21.4</span>
-			</p>
-		</section>
+		<script src="js/generate_changelogs.js"></script>
 	</body>
 </html>

@@ -9,3 +9,7 @@
 .rainbow span:nth-child(3) {
 	color: var(--purple); /* Purple color */
 }
+
+.grid-item {
+	width: 280px;
+}

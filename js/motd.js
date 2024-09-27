@@ -37,13 +37,25 @@ const messages = [
 	"welcome, traveller!",
 	"there are four lights!",
 	`hello, ${getOS()} user! :)`,
-	"live long and prosper!"
+	"live long and prosper.",
+	"dynamically generated!",
+	"earl gray, hot.",
+	"time might be an illusion.",
+	"all rights not reserved.",
+	"the 'hw' stands for HotWheel!",
+	"this one is extra rare, isn't that neat?",
+	`your lucky numbers: ${Math.ceil(Math.random() * 99)}, ${Math.floor(Math.random() * 100)}, ${Math.floor(Math.random() * 100)}, ${Math.floor(Math.random() * 100)}, ${Math.floor(Math.random() * 100)}, ${Math.floor(Math.random() * 100)}`
 ];
 
 // Function to display a random message
 function displayRandomMessage() {
 	// Generate a random index
-	const randomIndex = Math.floor(Math.random() * messages.length);
+	var randomIndex = Math.floor(Math.random() * messages.length);
+	
+	// Reroll if "this one is extra rare, isn't that neat?" is chosen, making that one twice as rare.
+	if (randomIndex == 20) {
+		randomIndex = Math.floor(Math.random() * messages.length);
+	}
 
 	// Get the message element
 	const messageElement = document.getElementById("motd");

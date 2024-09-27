@@ -9,20 +9,36 @@
 		<!-- Link to javascript files -->
 		<script src="js/motd.js"></script>
 		<!-- Set the page title to appear in the browser tab -->
-		<title>hw2007</title>
+		<title>hw2007.net</title>
 		<link rel="icon" href="assets/favicon.png" type="image/x-icon">
 	</head>
-	<body style="text-align: center;">
+	<body>
 		<!-- Title & welcome message at the top of the site -->
 		<!-- The "&zwnj;" represents a zero-width character, meant to stop some browsers from turning hw2007.net into a link -->
-		<p class="rainbow header">Welcome to hw2007&zwnj;.<span>n</span><span>e</span><span>t</span>!</p>
-		<p><i id="motd">.</i></p>
+		<p class="rainbow header large-view">Welcome to hw2007&zwnj;.<span>n</span><span>e</span><span>t</span>!</p>
+		<p class="rainbow header small-view">hw2007&zwnj;.<span>n</span><span>e</span><span>t</span></p>
+		<p><i id="motd">if you're seeing this, you might want to enable javascript...</i></p>
 
 		<!-- Links -->
-		<section id="link-container" style="padding-bottom: 80px">
-			<p style="padding-top: 80px;"><b>All the links!</b></p>
-			<!-- Links are filled out by generate_index_links.js -->
-		</section>
+		<!-- Links are filled out by generate_index_links.js -->
+		<div style="
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0px;
+			padding-top: calc(var(--pad4) - 20px);
+			justify-content: center;
+			justify-self: center;
+		">
+			<div class="grid-item" id="public">
+				<p><b>For all to see!</b></p>
+			</div>
+			<div class="grid-item" id="private">
+				<p><b>V.I.P. eyes only!</b></p>
+			</div>
+			<div class="grid-item" id="socials">
+				<p><b>More from me on...</b></p>
+			</div>
+		</div>
 
 		<script src="js/generate_index_links.js"></script>
 	</body>

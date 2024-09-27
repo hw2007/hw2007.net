@@ -38,3 +38,19 @@
     margin-right: 6px;
     text-align: left;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    max-width: calc(240px * 5);
+    grid-auto-rows: 384px;
+    gap: var(--pad3);
+    justify-content: center;
+    text-align: center;
+    padding-bottom: var(--pad2);
+    padding-top: var(--pad4);
+    padding-left: var(--pad2);
+    padding-right: var(--pad2);
+    margin: auto;
+}
+

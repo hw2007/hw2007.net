@@ -6,20 +6,20 @@
 		<!-- Use style.css as our default stylesheet -->
 		<link rel="stylesheet" type="text/css" href="styles/style.css" />
 		<!-- Set the page title to appear in the browser tab -->
-		<title id="title">hw2007 | Game</title>
+		<title id="title">Game - hw2007.net</title>
 		<link rel="icon" href="assets/favicon.png" type="image/x-icon" />
 	</head>
 	<body style="overflow: hidden;">
 		<!-- Back button -->
 		<p class="back">
-			<a href="arcade.html">
-				<span class="large-view"><< Back to arcade</span>
+			<a id="back_button_link" href="arcade.html">
+				<span id="back_button_text" class="large-view"><< Back to arcade</span>
 				<span class="small-view"><< Back</span>
 			</a>
 		</p>
 
 		<!-- Title -->
-		<p style="text-align: center;">
+		<p style="margin-top: 19px;">
 			<b id="name">Game</b>
 		</p>
 
@@ -41,16 +41,22 @@
 			</iframe>
 		</div>
 
+		<!-- Fullscreen button -->
+			<button class="image_button" id="expand" style="
+				width: 27px; 
+				height: 27px; 
+				position: absolute;
+				right: 16.5px;
+				top: 16.5px;
+			">
+				<img src="assets/fullscreen.png" style="
+					width: 27px;
+					height: 27px;
+					position: relative;
+				"></img>
+			</button>
+
 		<!-- Load javascript files after body to ensure the site completes loading before js runs -->
 		<script src="js/game-viewer.js"></script>
-        <script>
-            function setHeight() {
-                const gameContainer = document.getElementById("game-container");
-                gameContainer.style.height = (window.innerHeight - 60) + "px";
-            }
-
-            window.addEventListener("resize", setHeight);
-            window.addEventListener("load", setHeight);
-        </script>
 	</body>
 </html>

@@ -6,26 +6,17 @@
 		<!-- Use style.css as our default stylesheet -->
 		<link rel="stylesheet" type="text/css" href="styles/style.css" />
 		<!-- Set the page title to appear in the browser tab -->
-		<title id="title">TurboWarp Embed - hw2007.net</title>
+		<title id="title">Itch.io Embed - hw2007.net</title>
 		<link rel="icon" href="assets/favicon.png" type="image/x-icon" />
 	</head>
-	<body id="game-container" style="
-		overflow: hidden;
-		margin: 0px;
-		padding: 0px;
-		width: 100%;
-		height: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	">
+	<body style="overflow: hidden;">
 		<!-- Embedded game -->
-		<div id="game-div" style="
-			border: none;
-			outline: none;
+		<div id="game-container" style="
 			position: absolute;
-			top: calc(50% - 23px);
-			transform: translateY(-50%);
+			top: -1px;
+			bottom: -20px;
+			left: -1px;
+			width: calc(100% + 2px);
 		">
 			<iframe id="game-frame" allowtransparency="true" allowfullscreen style="
 				border: none;
@@ -33,16 +24,9 @@
 				width: 100%;
 				height: 100%;
 			"></iframe>
-			<div style="
-				position: absolute;
-				top: -2px;
-				width: 100%;
-				height: 46px;
-				background-color: black;
-			"></div>
-		</div>
+	</div>
 
 		<!-- Load javascript files after body to ensure the site completes loading before js runs -->
-		<script src="js/turbowarp-viewer.js"></script>
+		<script src="js/itch-viewer.js"></script>
 	</body>
 </html>

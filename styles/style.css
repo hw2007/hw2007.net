@@ -2,6 +2,10 @@
 	--lightblue: #0099ff;
 	--blue: #002fff;
 	--purple: #7e15db;
+	--pad4: 50px;
+	--pad3: 35px;
+	--pad2: 20px;
+	--pad1: 5px;
 }
 
 
@@ -11,20 +15,20 @@
 }
 
 .large-view {
-	display: inline-block;
+	display: block
 }
 
 .small-view {
 	display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 660px) {
 	.large-view {
 		display: none;
 	}
 
 	.small-view {
-		display: inline-block;
+		display: block
 	}
 }
 
@@ -33,9 +37,11 @@ body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
+	padding-bottom: var(--pad2);
 	background-color: black;
 	color: white;
 	font-size: 20px;
+	text-align: center;
 }
 
 html {
@@ -70,21 +76,29 @@ a:hover {
 	color: var(--purple); /* Purple color */
 }
 
-.small {
-	font-size: 20px;
-}
-
 .back {
 	position: absolute;
 	padding: 0px;
-	top: 0px;
-	margin: 15px;
+	top: -1px;
+	left: 16.5px;
 }
 
 .header {
 	font-size: 60px;
-	padding-top: 60px;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-top: var(--pad3);
+	padding-left: var(--pad1);
+	padding-right: var(--pad1);
 	font-weight: bold;
+}
+
+.image_button {
+	background-color: var(--lightblue);
+}
+
+.image_button:hover {
+	background-color: var(--purple);
+}
+
+.image_button:active {
+	background-color: var(--lightblue);
 }
