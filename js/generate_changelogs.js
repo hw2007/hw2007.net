@@ -10,7 +10,7 @@ const updates = [
             "Changed the fullscreen button icon.",
             "Changed padding sitewide to make things line up better & take up less space.",
             "The 'Welcome to hw2007.net!' message on the home page now changes to just 'hw2007.net' on small screens.",
-            "Added custom 404 & 403 error pages.",
+            "Added custom 404, 403, & 401 error pages.",
             "Added a link to the server resource pack in the server downloads page.",
             "The arcade page now shows a max of 5 columns at a time.",
             "Added some credits at the bottom of the changelogs page.",
