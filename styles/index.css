@@ -11,5 +11,7 @@
 }
 
 .grid-item {
-	width: 280px;
+	width: 320px;
+	padding-left: calc(var(--pad2) / 2);
+	padding-right: calc(var(--pad2) / 2);
 }

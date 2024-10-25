@@ -2,6 +2,8 @@
 	--lightblue: #0099ff;
 	--blue: #002fff;
 	--purple: #7e15db;
+	--gray: #1c1c1c;
+	--lightgray: #505050;
 	--pad4: 50px;
 	--pad3: 35px;
 	--pad2: 20px;
@@ -101,4 +103,33 @@ a:hover {
 
 .image_button:active {
 	background-color: var(--lightblue);
+}
+
+.fancy-link {
+	text-align: left;
+	display: flex;
+	align-content: center;
+	padding: 8px;
+	width: auto;
+	height: auto;
+	border: solid;
+	border-color: var(--gray);
+	border-width: 4px;
+	background-color: black;
+	margin-top: -4px;
+	margin-bottom: -4px;
+	transition: transform 0.1s ease;
+	position: relative;
+}
+
+.fancy-link:hover {
+	border-color: white;
+	transform: translate(-4px, -4px);
+	z-index: 10;
+	cursor: pointer;
+}
+
+.fancy-link:active {
+    transform: translate(0px, 0px);
+    transition: transform 0s ease;
 }
