@@ -5,7 +5,8 @@ const updates = [
             "Redesigned homepage! The public & private pages have been collapsed into one catagory, and a new button fancy button style with custom icons has been used on the links!",
             "Updated the arcade page to use the same buttons as the new homepage.",
             "The arcade page now tells you the controls for each game.",
-            "Added a new 'Projects' page, which gives you a list of some of the open-source apps & tools I have created."
+            "Added a new 'Projects' page, which gives you a list of some of the open-source apps & tools I have created.",
+            "Updated the server downloads page to use the new fancy link style."
         ]
     },
     {

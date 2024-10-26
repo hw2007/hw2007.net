@@ -5,6 +5,7 @@
 	<head>
 		<!-- Use style.css as our default stylesheet -->
 		<link rel="stylesheet" type="text/css" href="styles/style.css" />
+		<link rel="stylesheet" type="text/css" href="styles/downloads.css" />
 		<!-- Set the page title to appear in the browser tab -->
 		<title>Server Downloads - hw2007.net</title>
 		<link rel="icon" href="assets/favicon.png" type="image/x-icon" />
@@ -14,53 +15,31 @@
 		<p class="back">
 			<a href="/"><< Back to hw2007.net</a>
 		</p>
-
+		
 		<!-- Title area -->
 		<p class="header">Server Downloads<p>
 		<p><i>downloads of my minecraft server's world from various dates.</i></p>
-
 		<!-- Links -->
-		<div>
-			<!-- World 2 -->
-			<p style="padding-top: var(--pad4)">
-				<b>World 2 (JE)</b>
-			</p>
-
-			<p>
-				<a href="downloads/Oct-3-2024.zip">⬇️ Oct 3 2024</a><br/>
-				<a href="downloads/Aug-13-2024.zip">⬇️ Aug 13 2024</a><br/>
-				<a href="downloads/June-27-2024.zip">⬇️ June 27 2024</a><br/>
-				<a href="downloads/June 13 2024.zip">⬇️ June 13 2024</a><br/>
-				<a href="downloads/June 4 2024.zip">⬇️ June 4 2024</a><br/>
-				<a href="downloads/April 8 2024.zip">⬇️ April 8 2024</a><br/>
-				<a href="downloads/March 5 2024.zip">⬇️ March 5 2024</a><br/>
-				<a href="downloads/Feb 25 2024.zip">⬇️ Feb 25 2024</a><br/>
-				<a href="downloads/Aug 15 2023.zip">⬇️ Aug 15 2023</a><br/>
-				<a href="downloads/April 2023.zip">⬇️ April 2023</a><br/>
-				<a href="downloads/March 27 2023.zip">⬇️ March 27 2023</a><br/>
-				<a href="downloads/Oct 26 2022.zip">⬇️ Oct 26 2022 (BE)</a><br/>
-				<a href="downloads/Aug 17 2022.zip">⬇️ Aug 17 2022 (BE)</a><br/>
-			</p>
-
-			<!-- World 1 -->
-			<p style="padding-top: var(--pad2)">
-				<b>World 1 (BE)</b>
-			</p>
-
-			<p>
-				<a href="downloads/Final (Java).zip">⬇️ Final World (JE)</a><br/>
-				<a href="downloads/Final (Bedrock).zip">⬇️ Final World</a><br/>
-				<a href="downloads/June 12 2021.zip">⬇️ June 12 2021</a><br/>
-			</p>
-
-			<!-- Texture pack -->
-			<p style="padding-top: var(--pad2)">
-				<b>Resource pack for world 2 downloads after Aug 13 2024:</b>
-			</p>
-
-			<p>
-				<a href="assets/PlaytimeModels/pack.zip">⬇️ Resource Pack</a><br/>
-			</p>
+		<div style="
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0px;
+			padding-top: calc(var(--pad4) - 20px);
+			padding-bottom: calc(var(--pad2) + 4px);
+			justify-content: center;
+			justify-self: center;
+		">
+			<div class="grid-item" id="2">
+				<p><b>World 2 (JE)</b></p>
+				<a class="fancy-link" href="assets/PlaytimeModels/pack.zip" style="padding: 4px;">
+					<p style="margin-top: auto; margin-bottom: auto; padding-left: 4px;">🏞️ Server Resource Pack</p>
+				</a>
+			</div>
+			<div class="grid-item" id="1">
+				<p><b>World 1 (BE)</b></p>
+			</div>
 		</div>
+
+		<script src="js/generate_download_links.js"></script>
 	</body>
 </html>
