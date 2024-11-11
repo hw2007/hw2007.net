@@ -15,7 +15,7 @@ const gameUrl = getUrlParam("url");
 if (gameUrl) {
     document.getElementById("game").src = gameUrl;
 } else {
-    document.getElementById("game-container").innerHTML = "<p>❌ You need to provide a game URL, silly!</p>"
+    document.getElementById("game-container").innerHTML = "<p>❌ You need to provide a game URL, silly!</p>";
 }
 
 // Name of the game, displayed at top of page & used as page title
