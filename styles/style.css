@@ -3,13 +3,15 @@
 	--blue: #002fff;
 	--purple: #7e15db;
 	--gray: #1c1c1c;
+	--darkgray: #151515;
 	--lightgray: #505050;
+	--green: #67c621;
 	--pad4: 50px;
 	--pad3: 35px;
 	--pad2: 20px;
 	--pad1: 5px;
+	--std-page-width: 800px;
 }
-
 
 @font-face {
 	font-family: "Tiny5";
@@ -17,7 +19,7 @@
 }
 
 .large-view {
-	display: block
+	display: block;
 }
 
 .small-view {
@@ -30,7 +32,7 @@
 	}
 
 	.small-view {
-		display: block
+		display: block;
 	}
 }
 
@@ -93,6 +95,11 @@ a:hover {
 	font-weight: bold;
 }
 
+.subheader {
+	font-size: 40px;
+	font-weight: bold;
+}
+
 .image_button {
 	background-color: var(--lightblue);
 }
@@ -126,10 +133,9 @@ a:hover {
 	border-color: white;
 	transform: translate(-4px, -4px);
 	z-index: 10;
-	cursor: pointer;
 }
 
 .fancy-link:active {
-    transform: translate(0px, 0px);
-    transition: transform 0s ease;
+	transform: translate(0px, 0px);
+	transition: transform 0s ease;
 }

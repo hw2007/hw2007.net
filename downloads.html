@@ -21,19 +21,21 @@
 		<p><i>downloads of my minecraft server's world from various dates.</i></p>
 		<!-- Links -->
 		<div style="
-			display: flex;
-			flex-wrap: wrap;
-			gap: 0px;
-			padding-top: calc(var(--pad4) - 20px);
-			padding-bottom: calc(var(--pad2) + 4px);
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+			max-width: var(--std-page-width);
+			column-gap: calc(var(--pad2) - 8px);
+			row-gap: var(--pad2);
 			justify-content: center;
-			justify-self: center;
+			text-align: center;
+			padding-bottom: var(--pad2);
+			padding-top: calc(var(--pad3) - 5px);
+			padding-left: var(--pad2);
+			padding-right: var(--pad2);
+			margin: auto;
 		">
 			<div class="grid-item" id="2">
 				<p><b>World 2 (JE)</b></p>
-				<a class="fancy-link" href="assets/PlaytimeModels/pack.zip" style="padding: 4px;">
-					<p style="margin-top: auto; margin-bottom: auto; padding-left: 4px;">🏞️ Server Resource Pack</p>
-				</a>
 			</div>
 			<div class="grid-item" id="1">
 				<p><b>World 1 (BE)</b></p>
