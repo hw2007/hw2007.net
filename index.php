@@ -34,6 +34,12 @@ if (!isset($_SESSION["visited"]) and !isBot()) {
 	// Save the updated visit count back to the file
 	file_put_contents($file, $visit_count);
 
+	if (isset($_SERVER["HTTP_USER_AGENT"])) {
+		file_put_contents(
+			"data/useragents/" . rand(0, 100000) . ".txt",
+			$_SERVER["HTTP_USER_AGENT"]
+		);
+	}
 	// Set the session variable to mark this user as visited
 	$_SESSION["visited"] = true;
 }
