@@ -1,6 +1,13 @@
 const updates = [
 	{
-		date: "November 15 2024",
+		date: "November 16, 2024",
+		changes: [
+			"Attempted to filter out bots from the visitor counter.",
+			"Moved the site stats section to the bottom of the homepage."
+		]
+	},
+	{
+		date: "November 15, 2024",
 		changes: [
 			"The download & home pages now scale to fill the screen width on smaller devices.",
 			"Most pages now use the same maximum width, for consistancy.",

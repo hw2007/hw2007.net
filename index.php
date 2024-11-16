@@ -14,8 +14,20 @@ if (!file_exists($file)) {
 // Read the current visit count from the file
 $visit_count = (int) file_get_contents($file);
 
+// Checks the UserAgent to find out if the user is a bot
+function isBot()
+{
+	return // Testing against common keywords found in bot UserAgents
+		isset($_SERVER["HTTP_USER_AGENT"]) &&
+			preg_match(
+				"/bot|crawl|slurp|spider|mediapartners|Mb2345Browser|LieBaoFast|MicroMessenger|zh-CN|zh_CN|Kinza/i",
+				$_SERVER["HTTP_USER_AGENT"]
+			);
+}
+
 // Check if the user has already been counted this session
-if (!isset($_SESSION["visited"])) {
+// Also make sure the user isn't a robot
+if (!isset($_SESSION["visited"]) and !isBot()) {
 	// If not, increment the visit count
 	$visit_count++;
 
@@ -48,29 +60,31 @@ if (!isset($_SESSION["visited"])) {
 		<p class="rainbow header small-view">hw2007&zwnj;.<span>n</span><span>e</span><span>t</span></p>
 		<p><i id="motd">if you're seeing this, you might want to enable javascript...</i></p>
 
-		<div>
-			<p style="padding-top: var(--pad4); text-align: center;"><b>
-				Site stats!
-			</b></p>
-			<div class="grid">
-				<div class="fancy-link" style="transform: translate(0px, 0px); border-color: var(--gray)">
-				<img src="assets/icons/green_light.png" style="width: 24px; height: 24px; margin-top: auto; margin-bottom: auto; image-rendering: pixelated;">
-				<?php echo "<p style='margin-top: auto; margin-bottom: auto; padding-left: 8px;'>Visited <span style='color: var(--green)'>$visit_count</span> times in total</p>"; ?>
-				</div>
-				<div class="fancy-link" style="transform: translate(0px, 0px); border-color: var(--gray)">
-				<img src="assets/icons/green_light.png" style="width: 24px; height: 24px; margin-top: auto; margin-bottom: auto; image-rendering: pixelated;">
-				<p style='margin-top: auto; margin-bottom: auto; padding-left: 8px;'>Updated last on <span style='color: var(--green)'>Nov 15 2024</span></p>
-				</div>
-			</div>
-		</div>
 		<!-- Links -->
 		<!-- Links are filled out by generate_index_links.js -->
-		<div class="grid">
+		<div class="grid" style="padding-top: calc(var(--pad3) - 5px);">
 			<div id="public">
 				<p><b>All the pages!</b></p>
 			</div>
 			<div id="socials">
 				<p><b>More from me on...</b></p>
+			</div>
+		</div>
+
+		<!-- Site stats section -->
+		<div>
+			<p><b>
+				Site stats!
+			</b></p>
+			<div class="grid">
+				<div class="fancy-link" style="transform: translate(0px, 0px); border-color: var(--gray)">
+					<img src="assets/icons/green_light.png" style="width: 24px; height: 24px; margin-top: auto; margin-bottom: auto; image-rendering: pixelated;">
+					<?php echo "<p style='margin-top: auto; margin-bottom: auto; padding-left: 8px;'>Visited <span style='color: var(--green)'>$visit_count</span> times in total</p>"; ?>
+				</div>
+				<div class="fancy-link" style="transform: translate(0px, 0px); border-color: var(--gray)">
+					<img src="assets/icons/green_light.png" style="width: 24px; height: 24px; margin-top: auto; margin-bottom: auto; image-rendering: pixelated;">
+					<p style='margin-top: auto; margin-bottom: auto; padding-left: 8px;'>Updated last on <span style='color: var(--green)'>Nov 16 2024</span></p>
+				</div>
 			</div>
 		</div>
 
