@@ -1,4 +1,15 @@
 <?php
+require 'vendor/autoload.php';
+use Jaybizzle\CrawlerDetect\CrawlerDetect;
+
+$CrawlerDetect = new CrawlerDetect;
+$isCrawler = false;
+// Reads true if the user is a bot/crawler
+if ($CrawlerDetect -> isCrawler()) {
+	$isCrawler = true;
+	error_log("The user is a crawler!");
+}
+
 // Start the session
 ini_set("session.gc_maxlifetime", 3600); // Set session lifetime to 1 hour before browser can delete it during garbage collection
 session_start();
@@ -14,20 +25,9 @@ if (!file_exists($file)) {
 // Read the current visit count from the file
 $visit_count = (int) file_get_contents($file);
 
-// Checks the UserAgent to find out if the user is a bot
-function isBot()
-{
-	return // Testing against common keywords found in bot UserAgents
-		isset($_SERVER["HTTP_USER_AGENT"]) &&
-			preg_match(
-				"/bot|crawl|slurp|spider|mediapartners|Mb2345Browser|LieBaoFast|MicroMessenger|zh-CN|zh_CN|Kinza/i",
-				$_SERVER["HTTP_USER_AGENT"]
-			);
-}
-
 // Check if the user has already been counted this session
-// Also make sure the user isn't a robot
-if (!isset($_SESSION["visited"]) and !isBot()) {
+// Also make sure the user isn't a crawler
+if (!isset($_SESSION["visited"]) and !$isCrawler) {
 	// If not, increment the visit count
 	$visit_count++;
 

@@ -4,7 +4,7 @@ const updates = [
 		changes: [
 			"Attempted to filter out bots from the visitor counter.",
 			"Moved the site stats section to the bottom of the homepage."
-		]
+		],
 	},
 	{
 		date: "November 15, 2024",
@@ -12,7 +12,7 @@ const updates = [
 			"The download & home pages now scale to fill the screen width on smaller devices.",
 			"Most pages now use the same maximum width, for consistancy.",
 			"Added a 'Site stats' section to the homepage, which includes the total number of visits (since the feature has been added) and the last update date.",
-			"The downloads page is now populated partially using PHP."
+			"The downloads page is now populated partially using PHP.",
 		],
 	},
 	{
