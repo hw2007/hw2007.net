@@ -85,7 +85,9 @@ if (!isset($_SESSION["visited"]) and !$isCrawler) {
 			<div class="grid">
 				<div class="fancy-link" style="transform: translate(0px, 0px); border-color: var(--gray)">
 					<img src="assets/icons/green_light.png" style="width: 24px; height: 24px; margin-top: auto; margin-bottom: auto; image-rendering: pixelated;">
-					<?php echo "<p style='margin-top: auto; margin-bottom: auto; padding-left: 8px;'>Visited <span style='color: var(--green)'>$visit_count</span> times in total</p>"; ?>
+					<?php echo 
+						"<p style='margin-top: auto; margin-bottom: auto; padding-left: 8px;'>Visited <span style='color: var(--green)'>$visit_count</span> times in total</p>";
+					?>
 				</div>
 				<div class="fancy-link" style="transform: translate(0px, 0px); border-color: var(--gray)">
 					<img src="assets/icons/green_light.png" style="width: 24px; height: 24px; margin-top: auto; margin-bottom: auto; image-rendering: pixelated;">

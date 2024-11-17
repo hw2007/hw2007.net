@@ -23,7 +23,7 @@
     grid-template-columns: repeat(auto-fit, minmax(clamp(300px, 100%, 425px), 1fr));
     max-width: calc(400px * 5);
     column-gap: calc(var(--pad2) - 8px);
-    row-gap: var(--pad2);
+    row-gap: calc(var(--pad2) - 4px);
     justify-content: center;
     text-align: center;
     padding-bottom: var(--pad2);
