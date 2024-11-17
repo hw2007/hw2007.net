@@ -29,7 +29,6 @@ if (!file_exists($agents_file)) {
 }
 
 $agents = json_decode(file_get_contents($agents_file), true); // true returns an array instead of an object
-echo "<script>console.log(" . json_encode($agents) . ");</script>";
 
 // Read the current visit count from the file
 $visit_count = (int) file_get_contents($file);
