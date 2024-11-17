@@ -3,7 +3,7 @@ const updates = [
 		date: "November 16, 2024",
 		changes: [
 			"Attempted to filter out bots from the visitor counter.",
-			"Moved the site stats section to the bottom of the homepage."
+			"Moved the site stats section to the bottom of the homepage.",
 		],
 	},
 	{

@@ -1,11 +1,11 @@
 <?php
-require 'vendor/autoload.php';
+require "vendor/autoload.php";
 use Jaybizzle\CrawlerDetect\CrawlerDetect;
 
-$CrawlerDetect = new CrawlerDetect;
+$CrawlerDetect = new CrawlerDetect();
 $isCrawler = false;
 // Reads true if the user is a bot/crawler
-if ($CrawlerDetect -> isCrawler()) {
+if ($CrawlerDetect->isCrawler()) {
 	$isCrawler = true;
 	error_log("The user is a crawler!");
 }
@@ -16,11 +16,20 @@ session_start();
 
 // Define the file path where the visit count will be stored
 $file = "data/visit_counter.txt";
+// Path where useragent logs are stored
+$agents_file = "data/useragents.json";
 
 // Check if the file exists, if not, create it and initialize the count
 if (!file_exists($file)) {
 	file_put_contents($file, 0); // Initialize the visit count to 0
 }
+// Check if the file exists, if not, create it and initialize the count
+if (!file_exists($agents_file)) {
+	file_put_contents($agents_file, "{}"); // Initialize the visit count to 0
+}
+
+$agents = json_decode(file_get_contents($agents_file), true); // true returns an array instead of an object
+echo "<script>console.log(" . json_encode($agents) . ");</script>";
 
 // Read the current visit count from the file
 $visit_count = (int) file_get_contents($file);
@@ -36,6 +45,10 @@ if (!isset($_SESSION["visited"]) and !$isCrawler) {
 
 	// Set the session variable to mark this user as visited
 	$_SESSION["visited"] = true;
+	
+	// Log the useragent of the user that contributed to the count
+	$agents[date("Y-m-d H:i:s")] = $_SERVER['HTTP_USER_AGENT'];
+	file_put_contents($agents_file, json_encode($agents));
 }
 ?>
 
@@ -79,9 +92,7 @@ if (!isset($_SESSION["visited"]) and !$isCrawler) {
 			<div class="grid">
 				<div class="fancy-link" style="transform: translate(0px, 0px); border-color: var(--gray)">
 					<img src="assets/icons/green_light.png" style="width: 24px; height: 24px; margin-top: auto; margin-bottom: auto; image-rendering: pixelated;">
-					<?php echo 
-						"<p style='margin-top: auto; margin-bottom: auto; padding-left: 8px;'>Visited <span style='color: var(--green)'>$visit_count</span> times in total</p>";
-					?>
+					<?php echo "<p style='margin-top: auto; margin-bottom: auto; padding-left: 8px;'>Visited <span style='color: var(--green)'>$visit_count</span> times in total</p>"; ?>
 				</div>
 				<div class="fancy-link" style="transform: translate(0px, 0px); border-color: var(--gray)">
 					<img src="assets/icons/green_light.png" style="width: 24px; height: 24px; margin-top: auto; margin-bottom: auto; image-rendering: pixelated;">
