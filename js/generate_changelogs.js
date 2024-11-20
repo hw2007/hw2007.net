@@ -1,5 +1,13 @@
 const updates = [
 	{
+		date: "November 19, 2024",
+		"changes": [
+			"My war with webcrawlers continues! I now have a two stage filter for bots: First, you need to not be on the bot list. Then, you need to have javascript enabled, as a lot of bots run without it.",
+			"Reset the visitor counter, which was most certainly 90% filled by bots.",
+			"Removed the version number at the bottom of the changelogs page."
+		]
+	},
+	{
 		date: "November 16, 2024",
 		changes: [
 			"Attempted to filter out bots from the visitor counter.",
