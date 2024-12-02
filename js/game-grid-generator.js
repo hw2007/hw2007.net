@@ -5,7 +5,7 @@ const games = [
 		img: "marketminer",
 		url:
 			"itchembed.html?url=" +
-			encodeURIComponent("https://itch.io/embed-upload/12143693?color=000000"),
+			encodeURIComponent("https://itch.io/embed-upload/12144162?color=000000"),
 		controls: "Click/Enter, P",
 	},
 	{
