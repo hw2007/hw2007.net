@@ -1,35 +1,37 @@
 .thumbnail {
-    position: absolute;
-    width: 128px;
-    height: 100px;
-    top: 64px;
-    left: 36px;
+	position: absolute;
+	width: 128px;
+	height: 100px;
+	top: 64px;
+	left: 36px;
 }
 
 .name {
-    margin-top: 6px;
+	margin-top: 6px;
 }
 
 .info {
-    margin-top: 202px;
-    color: white;
-    margin-left: 10px;
-    margin-right: 6px;
-    text-align: left;
+	margin-top: 202px;
+	color: white;
+	margin-left: 10px;
+	margin-right: 6px;
+	text-align: left;
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(clamp(300px, 100%, 425px), 1fr));
-    max-width: calc(400px * 5);
-    column-gap: calc(var(--pad2) - 8px);
-    row-gap: calc(var(--pad2) - 4px);
-    justify-content: center;
-    text-align: center;
-    padding-bottom: var(--pad2);
-    padding-top: var(--pad4);
-    padding-left: var(--pad2);
-    padding-right: var(--pad2);
-    margin: auto;
+	display: grid;
+	grid-template-columns: repeat(
+		auto-fit,
+		minmax(clamp(300px, 100%, 425px), 1fr)
+	);
+	max-width: calc(400px * 5);
+	column-gap: calc(var(--pad2) - 8px);
+	row-gap: calc(var(--pad2) - 4px);
+	justify-content: center;
+	text-align: center;
+	padding-bottom: var(--pad2);
+	padding-top: var(--pad4);
+	padding-left: var(--pad2);
+	padding-right: var(--pad2);
+	margin: auto;
 }
-
