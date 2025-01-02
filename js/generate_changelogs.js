@@ -1,7 +1,17 @@
 const updates = [
 	{
+		date: "January 1, 2025",
+		changes: [
+			"Slightly updated error pages to use the new fancy button style.",
+			"Replaced the old generic login system with a new custom login system!",
+			"The new login only requires a password (the old one needed a username too) and has a custom login page instead of the old browser popup.",
+			"The login page opens whenever you try to access the Server Map or Server Downloads pages.",
+			"This login system makes use of Apache's form authentication, in case anybody wants to recreate it. :)"
+		]
+	},
+	{
 		date: "November 19, 2024",
-		"changes": [
+		changes: [
 			"My war with webcrawlers continues! I now have a two stage filter for bots: First, you need to not be on the bot list. Then, you need to have javascript enabled, as a lot of bots run without it.",
 			"Reset the visitor counter, which was most certainly 90% filled by bots.",
 			"Removed the version number at the bottom of the changelogs page."

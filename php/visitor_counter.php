@@ -10,7 +10,6 @@ if ($CrawlerDetect->isCrawler()) {
 }
 
 // Start the session
-ini_set("session.gc_maxlifetime", 3600); // Set session lifetime to 1 hour before browser can delete it during garbage collection
 session_start();
 
 // Define the file path where the visit count will be stored
@@ -35,7 +34,12 @@ $visit_count = (int) file_get_contents($file);
 // Check if the user has already been counted this session
 // Also make sure the user isn't a crawler
 // Also make sure javascript is enabled, to further filter out bots
-if (!isset($_SESSION["visited"]) and !$isCrawler and isset($_GET["increment"]) and $_GET["increment"] == "1") {
+if (
+	!isset($_SESSION["visited"]) and
+	!$isCrawler and
+	isset($_GET["increment"]) and
+	$_GET["increment"] == "1"
+) {
 	// If not, increment the visit count
 	$visit_count++;
 

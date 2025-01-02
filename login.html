@@ -1,0 +1,48 @@
+<!doctype html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<html>
+	<head>
+		<!-- Use style.css as our default stylesheet -->
+		<link rel="stylesheet" type="text/css" href="styles/style.css" />
+		<link rel="stylesheet" type="text/css" href="styles/login.css" />
+		<!-- Set the page title to appear in the browser tab -->
+		<title>Login - hw2007.net</title>
+		<link rel="icon" href="assets/favicon.png" type="image/x-icon">
+	</head>
+	<body">
+		<!-- Back button -->
+		<p class="back">
+			<a href="/"><< Back to hw2007.net</a>
+		</p>
+
+		<!-- Title & subtitle -->
+		<p class="header">Login Required</p>
+		<p style="padding-left: var(--pad2); padding-right: var(--pad2)"><i>This page is only for members of my minecraft server!</i></p>
+
+		<!-- Password form -->
+		<form id="form" action="/submit-login.html" method="POST" style="
+			padding-top: var(--pad4);
+			padding-bottom: calc(var(--pad2) + 4px);
+			justify-self: center;
+			padding-left: var(--pad2);
+			padding-right: var(--pad2);
+			max-width: 400px;
+			margin: auto;
+		">
+			<label>Please enter the password to continue:</label>
+			<input style="display: none;" type="text" name="httpd_username" value="vip">
+			<input class="password" type="password" name="httpd_password" placeholder="Password">
+			<button type="submit" class="fancy-link" style="justify-content: center; width: 100%;">
+				Submit
+			</button>
+		</form>
+
+		<p id="pwd_status" style="padding-top: var(--pad4); color: gray">
+			Error
+		</p>
+
+		<!-- Link to javascript files -->
+		<script src="js/login.js"></script>
+	</body>
+</html>

@@ -1,10 +1,13 @@
 function arraymove(arr, fromIndex, toIndex) {
-	var element = arr[fromIndex];
-	arr.splice(fromIndex, 1);
-	arr.splice(toIndex, 0, element);
+	console.log(fromIndex)
+	if (fromIndex > -1) {
+		var element = arr[fromIndex];
+		arr.splice(fromIndex, 1);
+		arr.splice(toIndex, 0, element);
+	}
 }
 
-fetch("php/get_downloads.php")
+fetch("/php/get_downloads.php")
 	.then((data) => data.json())
 	.then((files) => {
 		files = files.sort((a, b) => {
@@ -28,7 +31,7 @@ fetch("php/get_downloads.php")
 		files.forEach((file) => {
 			const mainLinkElement = document.createElement("a");
 			mainLinkElement.classList = "fancy-link";
-			mainLinkElement.href = "downloads/" + file;
+			mainLinkElement.href = "/downloads/" + file;
 			mainLinkElement.style.padding = "4px";
 			mainLinkElement.innerHTML = `
 				<p style="margin-top: auto; margin-bottom: auto; padding-left: 4px;">

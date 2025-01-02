@@ -30,7 +30,7 @@ const links = [
 	{
 		name: "Minecraft Server Map",
 		icon: "servermap",
-		html: "game.html?name=Server%20Map&backButtonMode=index&url=map/",
+		html: "/map-embed/",
 		catagory: "public",
 		is_vip: true,
 	},

@@ -27,8 +27,7 @@
 		<p class="rainbow header large-view">Welcome to hw2007&zwnj;.<span>n</span><span>e</span><span>t</span>!</p>
 		<p class="rainbow header small-view">hw2007&zwnj;.<span>n</span><span>e</span><span>t</span></p>
 		<p><i id="motd">if you're seeing this, you might want to enable javascript...</i></p>
-
-		<!-- Links -->
+		
 		<!-- Links are filled out by generate_index_links.js -->
 		<div class="grid" style="padding-top: calc(var(--pad3) - 5px);">
 			<div id="public">
