@@ -1,0 +1,6 @@
+.grid {
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    row-gap: 0px;
+    padding-bottom: var(--pad2);
+    padding-top: calc(var(--pad3) - 5px);
+}

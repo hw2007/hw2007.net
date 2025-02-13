@@ -9,7 +9,7 @@
 	border-color: var(--gray);
 	border-radius: 0px;
 	border-width: 4px;
-	background-color: black;
+	background-color: var(--bg-color);
 	margin-bottom: 16px;
     margin-top: 16px;
 	position: relative;

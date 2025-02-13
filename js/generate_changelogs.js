@@ -1,5 +1,13 @@
 const updates = [
 	{
+		date: "???",
+		changes: [
+			"The arcade page is now limited to 3 columns, instead of 4.",
+			"Various internal changes, such as unifying all colors with variables, and creating a standard grid class for pages like the homepage, arcade, projects, and downloads which all use similar layouts.",
+			"Fixed the 'Go Home?' button on error pages being left-aligned instead of center on Safari."
+		]
+	},
+	{
 		date: "January 1, 2025",
 		changes: [
 			"Slightly updated error pages to use the new fancy button style.",

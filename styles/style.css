@@ -5,6 +5,8 @@
 	--gray: #1c1c1c;
 	--darkgray: #151515;
 	--lightgray: #505050;
+	--bg-color: #000000;
+	--fg-color: #ffffff;
 	--green: #67c621;
 	--pad4: 50px;
 	--pad3: 35px;
@@ -42,8 +44,8 @@ body {
 	margin: 0;
 	padding: 0;
 	padding-bottom: var(--pad2);
-	background-color: black;
-	color: white;
+	background-color: var(--bg-color);
+	color: var(--fg-color);
 	font-size: 20px;
 	text-align: center;
 }
@@ -57,7 +59,7 @@ button {
 	font-family: "Tiny5", serif;
 	font-size: 20px;
 	padding: 0;
-	background-color: black;
+	background-color: var(--bg-color);
 	border: none;
 	color: var(--lightblue);
 	cursor: pointer;
@@ -102,6 +104,7 @@ a:hover {
 
 .image_button {
 	background-color: var(--lightblue);
+	mask-size: cover;
 }
 
 .image_button:hover {
@@ -122,7 +125,7 @@ a:hover {
 	border: solid;
 	border-color: var(--gray);
 	border-width: 4px;
-	background-color: black;
+	background-color: var(--bg-color);
 	margin-top: -4px;
 	margin-bottom: 0px;
 	transition: transform 0.1s ease;
@@ -130,7 +133,7 @@ a:hover {
 }
 
 .fancy-link:hover {
-	border-color: white;
+	border-color: var(--fg-color);
 	transform: translate(-4px, -4px);
 	z-index: 10;
 }
@@ -138,4 +141,18 @@ a:hover {
 .fancy-link:active {
 	transform: translate(0px, 0px);
 	transition: transform 0s ease;
+}
+
+.grid {
+	display: grid;
+	max-width: var(--std-page-width);
+	column-gap: calc(var(--pad2) - 8px);
+	row-gap: calc(var(--pad2) - 4px);
+	justify-content: center;
+	text-align: center;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	padding-left: var(--pad2);
+	padding-right: var(--pad2);
+	margin: auto;
 }

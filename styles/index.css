@@ -11,16 +11,6 @@
 }
 
 .grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-	max-width: var(--std-page-width);
-	column-gap: calc(var(--pad2) - 8px);
 	row-gap: 0px;
-	justify-content: center;
-	text-align: center;
-	padding-bottom: 0px;
-	padding-top: 0px;
-	padding-left: var(--pad2);
-	padding-right: var(--pad2);
-	margin: auto;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }

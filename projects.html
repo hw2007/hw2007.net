@@ -8,6 +8,7 @@
 	<head>
 		<!-- Use style.css as our default stylesheet -->
 		<link rel="stylesheet" type="text/css" href="styles/style.css" />
+		<link rel="stylesheet" type="text/css" href="styles/projects.css" />
 		<!-- Set the page title to appear in the browser tab -->
 		<title>Projects - hw2007.net</title>
 		<link rel="icon" href="assets/favicon.png" type="image/x-icon" />
@@ -27,17 +28,7 @@
 		<!-- Links are filled out by generate_project_links.js -->
 		<div
 			id="container"
-			style="
-				display: grid;
-				gap: calc(var(--pad2) - 4px);
-				padding-top: var(--pad4);
-				padding-bottom: calc(var(--pad2) + 4px);
-				justify-self: center;
-				padding-left: var(--pad2);
-				padding-right: var(--pad2);
-				max-width: var(--std-page-width);
-				margin: auto;
-			"
+			class="grid"
 		></div>
 
 		<script src="js/generate_project_links.js"></script>
