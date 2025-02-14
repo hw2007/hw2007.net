@@ -4,6 +4,14 @@ const fg_color_element = document.getElementById("fg-color")
 const gray_element = document.getElementById("gray")
 const lightgray_element = document.getElementById("lightgray")
 
+function isValidHex(hex) {
+    return /^#[0-9A-F]{6}$/i.test(hex);
+}
+
+function addHashtagToHex(hex) {
+    return hex.startsWith("#") ? hex : "#" + hex;
+}
+
 function applyTheme(theme) {
     var bg_color;
     var fg_color;
@@ -25,6 +33,24 @@ function applyTheme(theme) {
         lightgray = theme_data["lightgray"];
     }
 
+    bg_color = addHashtagToHex(bg_color)
+    fg_color = addHashtagToHex(fg_color)
+    gray = addHashtagToHex(gray)
+    lightgray = addHashtagToHex(lightgray)
+
+    if (!(isValidHex(bg_color))) {
+        bg_color = getComputedStyle(root).getPropertyValue("--bg-color");
+    }
+    if (!(isValidHex(fg_color))) {
+        fg_color = getComputedStyle(root).getPropertyValue("--fg-color");
+    }
+    if (!(isValidHex(gray))) {
+        gray = getComputedStyle(root).getPropertyValue("--gray");
+    }
+    if (!(isValidHex(lightgray))) {
+        lightgray = getComputedStyle(root).getPropertyValue("--lightgray");
+    }
+        
     root.style.setProperty("--bg-color", bg_color);
     root.style.setProperty("--fg-color", fg_color);
     root.style.setProperty("--gray", gray);
@@ -46,7 +72,7 @@ function updateInputFields() {
     var lightgray = localStorage.getItem("lightgray");
 
     if (!(bg_color && fg_color && gray && lightgray)) {
-        bg_color= getComputedStyle(root).getPropertyValue("--bg-color");
+        bg_color = getComputedStyle(root).getPropertyValue("--bg-color");
         fg_color = getComputedStyle(root).getPropertyValue("--fg-color");
         gray = getComputedStyle(root).getPropertyValue("--gray");
         lightgray = getComputedStyle(root).getPropertyValue("--lightgray");
