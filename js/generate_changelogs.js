@@ -1,10 +1,15 @@
 const updates = [
 	{
-		date: "???",
+		date: "February 13, 2025",
 		changes: [
 			"The arcade page is now limited to 3 columns, instead of 4.",
 			"Various internal changes, such as unifying all colors with variables, and creating a standard grid class for pages like the homepage, arcade, projects, and downloads which all use similar layouts.",
-			"Fixed the 'Go Home?' button on error pages being left-aligned instead of center on Safari."
+			"Fixed the 'Go Home?' button on error pages being left-aligned instead of center on Safari.",
+			"Added themes to the website!",
+			"By clicking the new 'Site Themer' open on the homepage, you can customize the color scheme of the site.",
+			"There are 5 premade themes, but you can also use custom colors.",
+			"The speedtest page has been updated slightly. The speedtest widget now has a border, and isn't as large.",
+			"Resizing also works better on the speedtest page now."
 		]
 	},
 	{

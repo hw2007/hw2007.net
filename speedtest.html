@@ -3,6 +3,8 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <html>
 	<head>
+		<!-- THEMING SCRIPT -->
+		<script src="js/sitewide-theme-manager.js" defer></script>
 		<!-- Use style.css as our default stylesheet -->
 		<link rel="stylesheet" type="text/css" href="styles/style.css" />
 		<!-- Set the page title to appear in the browser tab -->
@@ -20,30 +22,20 @@
 		<p><i>test your connection to my server!</i></p>
 
 		<!-- OpenSpeedTest embed -->
-		<p align="center">
+		<div align="center" style="padding-top: 46px; margin-left: var(--pad2); margin-right: var(--pad2);">
 			<iframe
-				class="large-view"
 				src="/speedtest/index.html"
 				style="
-				padding-top: 0px;
-				border: none;
-				outline: none; 
+				padding: 4px;
 				width: 100%;
-				max-width: 1000px;
-				aspect-ratio: 16 / 9;
-				margin: auto;">
+				max-width: var(--std-page-width);
+				height: 500px;
+				border-width: 4px;
+				border-style: solid;
+				border-color: var(--gray);
+				box-sizing: border-box;
+				">
 			</iframe>
-			<iframe
-				class="small-view"
-				src="/speedtest/index.html"
-				style="
-				padding-top: var(--pad1);
-				border: none;
-				outline: none; 
-				width: 100%;
-				aspect-ratio: 9 / 11;
-				margin: auto;">
-			</iframe>
-		</p>
+		</div>
 	</body>
 </html>

@@ -3,8 +3,7 @@
 	--blue: #002fff;
 	--purple: #7e15db;
 	--gray: #1c1c1c;
-	--darkgray: #151515;
-	--lightgray: #505050;
+	--lightgray: #606060;
 	--bg-color: #000000;
 	--fg-color: #ffffff;
 	--green: #67c621;
@@ -155,4 +154,37 @@ a:hover {
 	padding-left: var(--pad2);
 	padding-right: var(--pad2);
 	margin: auto;
+}
+
+input {
+	text-align: left;
+    font-family: "Tiny5", sans-serif;
+    font-size: 20px;
+	padding: 8px;
+	width: auto;
+	height: auto;
+	border: solid;
+	border-color: var(--gray);
+	border-radius: 0px;
+	border-width: 4px;
+	background-color: var(--bg-color);
+	position: relative;
+	margin-top: -4px;
+	margin-bottom: 0px;
+	color: var(--fg-color);
+}
+
+input::placeholder {
+	color: var(--lightgray);
+}
+
+input:hover {
+	border-color: var(--fg-color);
+	z-index: 10;
+}
+
+input:focus {
+	border-color: var(--fg-color);
+    outline: none;
+	z-index: 10;
 }

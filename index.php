@@ -5,6 +5,8 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <html>
 	<head>
+		<!-- THEMING SCRIPT -->
+		<script src="js/sitewide-theme-manager.js" defer></script>
 		<!-- Use style.css as our default stylesheet -->
 		<link rel="stylesheet" type="text/css" href="styles/style.css" />
 		<link rel="stylesheet" type="text/css" href="styles/index.css" />
@@ -50,12 +52,12 @@
 				</div>
 				<div class="fancy-link" style="transform: translate(0px, 0px); border-color: var(--gray)">
 					<img src="assets/icons/green_light.png" style="width: 24px; height: 24px; margin-top: auto; margin-bottom: auto; image-rendering: pixelated;">
-					<p style='margin-top: auto; margin-bottom: auto; padding-left: 8px;'>Updated last on <span style='color: var(--green)'>Jan 1 2025</span></p>
+					<p style='margin-top: auto; margin-bottom: auto; padding-left: 8px;'>Updated last on <span style='color: var(--green)'>Feb 13 2025</span></p>
 				</div>
 			</div>
 		</div>
 
-		<p id="show-on-vip-hover" style="padding-top: var(--pad4); color: gray">
+		<p id="show-on-vip-hover" style="padding-top: var(--pad4); color: var(--lightgray)">
 			*VIP access only!
 		</p>
 

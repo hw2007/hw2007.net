@@ -45,7 +45,7 @@ links.forEach(link => {
     mainLinkElement.innerHTML = `
         <img src="assets/project-thumbnails/${link.icon}.png" style="width: 128px; height: 128px; margin-top: auto; margin-bottom: auto; image-rendering: pixelated;">
 		<p style="margin-top: 0px; margin-bottom: auto; padding-left: 8px;"><b>${link.name} ↗︎<br></b>
-			<span style="color: white;">
+			<span style="color: var(--fg-color);">
                 ${link.description}
             </span>
 		</p>

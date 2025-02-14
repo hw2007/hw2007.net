@@ -1,0 +1,69 @@
+<!doctype html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta
+	http-equiv="Cache-Control"
+	content="no-cache, no-store, must-revalidate"
+/>
+<html>
+	<head>
+        <!-- THEMING SCRIPT -->
+		<script src="js/sitewide-theme-manager.js" defer></script>
+		<!-- Use style.css as our default stylesheet -->
+		<link rel="stylesheet" type="text/css" href="styles/style.css" />
+        <link rel="stylesheet" type="text/css" href="styles/themer.css" />
+		<!-- Set the page title to appear in the browser tab -->
+		<title>Themer - hw2007.net</title>
+		<link rel="icon" href="assets/favicon.png" type="image/x-icon" />
+	</head>
+	<body>
+		<!-- Back button -->
+		<p class="back">
+			<a href="/"><< Back to hw2007.net</a>
+		</p>
+
+		<!-- Title area -->
+		<p class="header">Themer</p>
+		<p></p>
+		<p><i>theme this site with premade themes, or your own custom colors!</i></p>
+
+        <!-- Theme editor -->
+        <div class="grid" style="padding-top: calc(var(--pad3) - 5px);">
+			<div id="premade-themes">
+				<p><b>Select a premade theme:</b></p>
+			</div>
+			<div>
+				<p><b>Or create your own custom theme:</b></p>
+                <div class="input-container">
+                    <label style="white-space: nowrap;">--bg-color</label>
+                    <input style="width: 100%" type="text" id="bg-color" value="#000000">
+                </div>
+                <div class="input-container">
+                    <label style="white-space: nowrap;">--fg-color</label>
+                    <input style="width: 100%" type="text" id="fg-color" value="#ffffff">
+                </div>
+                <div class="input-container">
+                    <label style="white-space: nowrap;">--gray</label>
+                    <input style="width: 100%" type="text" id="gray" value="#505050">
+                </div>
+                <div class="input-container">
+                    <label style="white-space: nowrap;">--lightgray</label>
+                    <input style="width: 100%" type="text" id="lightgray" value="#505050">
+                </div>
+                <p>Need a color picker? <a target="_blank" href="https://duckduckgo.com/?q=color+picker&ia=answer">Try this one! ↗︎</a></p>
+                <button onclick='applyTheme("custom")' class="fancy-link" style="justify-content: center; width: 100%;">
+                    ✅ Apply
+                </button>
+			</div>
+		</div>
+
+        <p style="padding-top: var(--pad4);">
+			Theme preview:<br>
+                <span style="color: var(--lightblue);">a</span><span style="color: var(--blue);">b</span><span style="color: var(--purple);">c</span><br>
+                <span style="color: var(--fg-color);">--fg-color</span><br>
+                <span style="color: var(--gray);">--gray</span><br>
+                <span style="color: var(--lightgray);">--lightgray</span>
+		</p>
+
+        <script src="js/themer.js"></script>
+	</body>
+</html>

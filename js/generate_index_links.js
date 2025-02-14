@@ -21,6 +21,13 @@ const links = [
 		is_vip: false,
 	},
 	{
+		name: "Site Themer",
+		icon: "themer",
+		html: "themer.html",
+		catagory: "public",
+		is_vip: false,
+	},
+	{
 		name: "Site Changelogs",
 		icon: "changelogs",
 		html: "changelogs.html",
