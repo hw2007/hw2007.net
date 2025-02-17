@@ -6,6 +6,8 @@
 	--lightgray: #606060;
 	--bg-color: #000000;
 	--fg-color: #ffffff;
+	--link: #0099ff;
+	--link-hover: #7e15db;
 	--green: #67c621;
 	--pad4: 50px;
 	--pad3: 35px;
@@ -60,25 +62,25 @@ button {
 	padding: 0;
 	background-color: var(--bg-color);
 	border: none;
-	color: var(--lightblue);
+	color: var(--link);
 	cursor: pointer;
 }
 
 button:hover {
-	color: var(--purple);
+	color: var(--link-hover);
 }
 
 button:active {
-	color: var(--lightblue);
+	color: var(--link);
 }
 
 a {
-	color: var(--lightblue); /* Light blue color */
+	color: var(--link); /* Light blue color */
 	text-decoration: none; /* Remove underline */
 }
 
 a:hover {
-	color: var(--purple); /* Purple color */
+	color: var(--link-hover); /* Purple color */
 }
 
 .back {
@@ -102,16 +104,16 @@ a:hover {
 }
 
 .image_button {
-	background-color: var(--lightblue);
+	background-color: var(--link);
 	mask-size: cover;
 }
 
 .image_button:hover {
-	background-color: var(--purple);
+	background-color: var(--link-hover);
 }
 
 .image_button:active {
-	background-color: var(--lightblue);
+	background-color: var(--link);
 }
 
 .fancy-link {

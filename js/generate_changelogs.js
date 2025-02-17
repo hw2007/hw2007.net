@@ -1,5 +1,16 @@
 const updates = [
 	{
+		date: "February 15, 2024",
+		changes: [
+			"You can now alter the button and button hover colors in the site themer.",
+			"Colors now have proper names in the site themer, rather than just their CSS variable names.",
+			"Added 8 new themes using palettes from <a href='https://www.colormagic.art/palette/explore'>colormagic.art</a>!",
+			"Added a link to colormagic in the site themer.",
+			"Themes now have a preview of their colors within their button. Each color is also now specified to be a light or dark theme.",
+			"On the homepage, the 'net' part of 'hw2007.net' used to be colored. Now, the 'hw' part is colored instead."
+		]
+	},
+	{
 		date: "February 13, 2025",
 		changes: [
 			"The arcade page is now limited to 3 columns, instead of 4.",

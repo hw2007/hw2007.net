@@ -26,8 +26,8 @@
 	<body>
 		<!-- Title & welcome message at the top of the site -->
 		<!-- The "&zwnj;" represents a zero-width character, meant to stop some browsers from turning hw2007.net into a link -->
-		<p class="rainbow header large-view">Welcome to hw2007&zwnj;.<span>n</span><span>e</span><span>t</span>!</p>
-		<p class="rainbow header small-view">hw2007&zwnj;.<span>n</span><span>e</span><span>t</span></p>
+		<p class="rainbow header large-view">Welcome to <span>h</span><span>w</span>2007&zwnj;.net!</p>
+		<p class="rainbow header small-view"><span>h</span><span>w</span>2007&zwnj;.net</p>
 		<p><i id="motd">if you're seeing this, you might want to enable javascript...</i></p>
 		
 		<!-- Links are filled out by generate_index_links.js -->
@@ -52,7 +52,7 @@
 				</div>
 				<div class="fancy-link" style="transform: translate(0px, 0px); border-color: var(--gray)">
 					<img src="assets/icons/green_light.png" style="width: 24px; height: 24px; margin-top: auto; margin-bottom: auto; image-rendering: pixelated;">
-					<p style='margin-top: auto; margin-bottom: auto; padding-left: 8px;'>Updated last on <span style='color: var(--green)'>Feb 13 2025</span></p>
+					<p style='margin-top: auto; margin-bottom: auto; padding-left: 8px;'>Updated last on <span style='color: var(--green)'>Feb 15 2025</span></p>
 				</div>
 			</div>
 		</div>

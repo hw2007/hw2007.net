@@ -7,7 +7,7 @@
 <html>
 	<head>
         <!-- THEMING SCRIPT -->
-		<script src="js/sitewide-theme-manager.js" defer></script>
+		<script src="js/sitewide-theme-manager.js"></script>
 		<!-- Use style.css as our default stylesheet -->
 		<link rel="stylesheet" type="text/css" href="styles/style.css" />
         <link rel="stylesheet" type="text/css" href="styles/themer.css" />
@@ -34,22 +34,31 @@
 			<div>
 				<p><b>Or create your own custom theme:</b></p>
                 <div class="input-container">
-                    <label style="white-space: nowrap;">--bg-color</label>
+                    <label style="white-space: nowrap;">Background</label>
                     <input style="width: 100%" type="text" id="bg-color" value="#000000">
                 </div>
                 <div class="input-container">
-                    <label style="white-space: nowrap;">--fg-color</label>
+                    <label style="white-space: nowrap;">Foreground</label>
                     <input style="width: 100%" type="text" id="fg-color" value="#ffffff">
                 </div>
                 <div class="input-container">
-                    <label style="white-space: nowrap;">--gray</label>
+                    <label style="white-space: nowrap;">Border</label>
                     <input style="width: 100%" type="text" id="gray" value="#505050">
                 </div>
                 <div class="input-container">
-                    <label style="white-space: nowrap;">--lightgray</label>
+                    <label style="white-space: nowrap;">Deactivated</label>
                     <input style="width: 100%" type="text" id="lightgray" value="#505050">
                 </div>
+                <div class="input-container">
+                    <label style="white-space: nowrap;">Button</label>
+                    <input style="width: 100%" type="text" id="link" value="#505050">
+                </div>
+                <div class="input-container">
+                    <label style="white-space: nowrap;">Button Hovered</label>
+                    <input style="width: 100%" type="text" id="link-hover" value="#505050">
+                </div>
                 <p>Need a color picker? <a target="_blank" href="https://duckduckgo.com/?q=color+picker&ia=answer">Try this one! ↗︎</a></p>
+                <p>Tip: You can find color palettes <a target="_blank" href="https://www.colormagic.art/palette/explore">here! ↗︎</a></p>
                 <button onclick='applyTheme("custom")' class="fancy-link" style="justify-content: center; width: 100%;">
                     ✅ Apply
                 </button>
@@ -58,10 +67,12 @@
 
         <p style="padding-top: var(--pad4);">
 			Theme preview:<br>
-                <span style="color: var(--lightblue);">a</span><span style="color: var(--blue);">b</span><span style="color: var(--purple);">c</span><br>
-                <span style="color: var(--fg-color);">--fg-color</span><br>
-                <span style="color: var(--gray);">--gray</span><br>
-                <span style="color: var(--lightgray);">--lightgray</span>
+                <span style="color: var(--link);">h</span><span style="color: var(--link-hover);">w</span>2007.net<br>
+                <span style="color: var(--fg-color);">Foreground</span><br>
+                <span style="color: var(--gray);">Border</span><br>
+                <span style="color: var(--lightgray);">Deactivated</span><br>
+                <span style="color: var(--link);">Button</span><br>
+                <span style="color: var(--link-hover);">Button Hovered</span>
 		</p>
 
         <script src="js/themer.js"></script>
