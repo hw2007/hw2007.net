@@ -1,6 +1,13 @@
 const updates = [
 	{
-		date: "February 15, 2024",
+		date: "April 3, 2025",
+		changes: [
+			"Tweaked the default purple color.",
+			"Fixed an incorrect year on the changelog directly below this one."
+		]
+	},
+	{
+		date: "February 15, 2025",
 		changes: [
 			"You can now alter the button and button hover colors in the site themer.",
 			"Colors now have proper names in the site themer, rather than just their CSS variable names.",

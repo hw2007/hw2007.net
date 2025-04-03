@@ -105,22 +105,22 @@ updateInputFields();
 
 
 const themes = {
-    "Classic Dark": {
+    "Default Dark": {
         "bg-color": "#000000",
         "fg-color": "#ffffff",
-        "gray": "#1c1c1c",
-        "lightgray": "#606060",
+        "gray": "#1f1f1f",
+        "lightgray": "#4a4a4a",
         "link": "#0099ff",
-	    "link-hover": "#7e15db",
+	    "link-hover": "#8a2ce2",
         "mode": "Dark"
     },
-    "Light Mode": {
+    "Default Light": {
         "bg-color": "#ffffff",
         "fg-color": "#000000",
         "gray": "#dbdbdb",
         "lightgray": "#b7b7b7",
         "link": "#0099ff",
-	    "link-hover": "#7e15db",
+	    "link-hover": "#8a2ce2",
         "mode": "Light"
     },
     "Forest Green": {
@@ -129,7 +129,7 @@ const themes = {
         "gray": "#0e2610",
         "lightgray": "#4b574b",
         "link": "#0099ff",
-	    "link-hover": "#7e15db",
+	    "link-hover": "#8a2ce2",
         "mode": "Dark"
     },
     "Navy Blue": {
@@ -138,7 +138,7 @@ const themes = {
         "gray": "#1b1f49",
         "lightgray": "#444a89",
         "link": "#0099ff",
-	    "link-hover": "#7e15db",
+	    "link-hover": "#8a2ce2",
         "mode": "Dark"
     },
     "Royal Purple": {
@@ -147,7 +147,7 @@ const themes = {
         "gray": "#2f1147",
         "lightgray": "#623687",
         "link": "#0099ff",
-	    "link-hover": "#7e15db",
+	    "link-hover": "#8a2ce2",
         "mode": "Dark"
     },
     "Solar Obsidian": {
