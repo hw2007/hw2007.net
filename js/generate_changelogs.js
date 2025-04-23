@@ -1,5 +1,11 @@
 const updates = [
 	{
+		date: "???",
+		changes: [
+			"Added catppuccin latte and mocha themes."
+		]
+	},
+	{
 		date: "April 18, 2025",
 		changes: [
 			"Added the 'macOS' theme, which uses the colors of the macOS dark mode.",

@@ -228,7 +228,25 @@ const themes = {
         "gray": "#404040",
         "lightgray": "#555555",
         "link": "#409CFF",
-	    "link-hover": "#5DE6FF",
+        "link-hover": "#5DE6FF",
+        "mode": "Dark"
+    },
+    "Catppuccin Latte": {
+        "bg-color": "#eff1f5",
+        "fg-color": "#4c4f69",
+        "gray": "#ccd0da",
+        "lightgray": "#bcc0cc",
+        "link": "#1e66f5",
+        "link-hover": "#8839ef",
+        "mode": "Light"
+    },
+    "Catppuccin Mocha": {
+        "bg-color": "#1e1e2e",
+        "fg-color": "#cdd6f4",
+        "gray": "#313244",
+        "lightgray": "#45475a",
+        "link": "#89b4fa",
+        "link-hover": "#cba6f7",
         "mode": "Dark"
     }
 }
