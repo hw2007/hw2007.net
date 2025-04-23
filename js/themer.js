@@ -221,6 +221,15 @@ const themes = {
         "link": "#f9e6a9",
 	    "link-hover": "#f1a8a2",
         "mode": "Dark"
+    },
+    "macOS": {
+        "bg-color": "#282828",
+        "fg-color": "#DFDFDF",
+        "gray": "#404040",
+        "lightgray": "#555555",
+        "link": "#409CFF",
+	    "link-hover": "#5DE6FF",
+        "mode": "Dark"
     }
 }
 

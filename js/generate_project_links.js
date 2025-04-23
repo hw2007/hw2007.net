@@ -1,5 +1,11 @@
 const links = [
     {
+        name: "Fireworks",
+        description: "A neat little fireworks simulation written with processing java.",
+        icon: "fireworks",
+        url: "https://github.com/hw2007/Fireworks",
+    },
+    {
         name: "Übersicht NASA Image",
         description: "An Übersicht widget to display NASA's Astronomy Picture of the Day (APOD) on your mac desktop.",
         icon: "apod",
