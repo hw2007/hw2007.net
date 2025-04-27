@@ -52,13 +52,13 @@
 				</div>
 				<div class="fancy-link" style="transform: translate(0px, 0px); border-color: var(--gray)">
 					<img src="assets/icons/green_light.png" style="width: 24px; height: 24px; margin-top: auto; margin-bottom: auto; image-rendering: pixelated;">
-					<p style='margin-top: auto; margin-bottom: auto; padding-left: 8px;'>Updated last on <span style='color: var(--green)'>Apr 18 2025</span></p>
+					<p style='margin-top: auto; margin-bottom: auto; padding-left: 8px;'>Updated last on <span style='color: var(--green)'>Apr 26 2025</span></p>
 				</div>
 			</div>
 		</div>
 
 		<p id="show-on-vip-hover" style="padding-top: var(--pad4); color: var(--lightgray)">
-			*VIP access only!
+			*Password required!
 		</p>
 
 		<script src="js/generate_index_links.js"></script>

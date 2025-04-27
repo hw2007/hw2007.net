@@ -5,7 +5,7 @@ const games = [
 		img: "marketminer",
 		url:
 			"itchembed.html?url=" +
-			encodeURIComponent("https://itch.io/embed-upload/13344785?color=000000"),
+			encodeURIComponent("https://itch.io/embed-upload/13512767?color=000000"),
 		controls: "Click/Enter, P",
 	},
 	{
@@ -47,7 +47,7 @@ const games = [
 		controls: "Space, Click, Tab, Z",
 	},
 	{
-		name: "Exploding Physics",
+		name: "Exploding Physics Playground",
 		info: "Spawn characters and watch them explode!",
 		img: "explodingphysics",
 		url:

@@ -1,10 +1,62 @@
 .input-container {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: calc(var(--pad2) - 4px);
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: calc(var(--pad2) - 4px);
 }
 
 .grid {
 	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+input[type="checkbox"] {
+	appearance: none;
+	width: 46.5px;
+	height: 46.5px;
+	border: 4px solid var(--gray);
+	background-color: var(--bg-color);
+	position: relative;
+	margin-right: 0px;
+}
+
+input[type="checkbox"]:hover {
+	border-color: var(--fg-color);
+}
+
+input[type="checkbox"]:checked {
+	background-color: var(--bg-color);
+}
+
+input[type="checkbox"]::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	scale: 0.0;
+	
+	mask-image: url("/assets/checkmark.png");
+	-webkit-mask-image: url("/assets/checkmark.png");
+
+	mask-repeat: no-repeat;
+	-webkit-mask-repeat: no-repeat;
+
+	mask-position: center;
+	-webkit-mask-position: center;
+
+	mask-size: contain;
+	-webkit-mask-size: contain;
+
+	background-color: var(--link-hover);
+	transition: scale 0.1s ease
+}
+
+input[type="checkbox"]:checked::after {
+	background-color: var(--link);
+	scale: 0.8;
+}
+
+input[type="checkbox"]:checked:hover::after {
+	background-color: var(--link-hover);
 }

@@ -1,8 +1,14 @@
 const updates = [
 	{
-		date: "???",
+		date: "April 26, 2025",
 		changes: [
-			"Added catppuccin latte and mocha themes."
+			"Added catppuccin latte and mocha themes.",
+			"Changed some wording in the custom theme maker to be more clear.",
+			"Dark mode and light mode themes will now change the website's color-scheme property, meaning system UI elements such as scrollbars will be light or dark depending on the theme.",
+			"Dark mode can now be toggled on or off when making a custom theme.",
+			"'Incorrect Password' on the login page now uses the default text color instead of disabled color, for better contrast.",
+			"'VIP access only' has been changed to 'Password required' on the homepage.",
+			"The game 'Exploding Physics' now uses it's full name, 'Exploding Physics Playground', on the arcade page."
 		]
 	},
 	{

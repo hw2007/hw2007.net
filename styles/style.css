@@ -81,7 +81,6 @@ a {
 
 a:hover {
 	color: var(--link-hover); /* Purple color */
-	
 }
 
 .back {
@@ -89,10 +88,6 @@ a:hover {
 	padding: 0px;
 	top: -1px;
 	left: 16.5px;
-}
-
-back:hover {
-	sc;
 }
 
 .header {
@@ -140,7 +135,6 @@ back:hover {
 
 .fancy-link:hover {
 	border-color: var(--fg-color);
-	background-color: var(--gray);
 	transform: translate(-4px, -4px);
 	z-index: 10;
 }

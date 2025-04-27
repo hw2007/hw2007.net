@@ -4,14 +4,15 @@ const gray = localStorage.getItem("gray");
 const lightgray = localStorage.getItem("lightgray");
 const link = localStorage.getItem("link");
 const link_hover = localStorage.getItem("link-hover");
+const color_scheme = localStorage.getItem("color-scheme");
 
 function applyColor(color, variable) {
-    if (color) {
-        document.documentElement.style.setProperty("--" + variable, color);
-        return true
-    } else {
-        return false
-    }
+	if (color) {
+		document.documentElement.style.setProperty("--" + variable, color);
+		return true;
+	} else {
+		return false;
+	}
 }
 
 applyColor(bg_color, "bg-color");
@@ -20,3 +21,7 @@ applyColor(gray, "gray");
 applyColor(lightgray, "lightgray");
 applyColor(link, "link");
 applyColor(link_hover, "link-hover");
+
+if (color_scheme) {
+	document.documentElement.style.setProperty("color-scheme", color_scheme);
+}
