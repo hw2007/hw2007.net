@@ -1,6 +1,6 @@
 <?php
 // Path to the downloads folder
-$downloads = $_SERVER['DOCUMENT_ROOT'] . "/downloads";
+$downloads = $_SERVER['DOCUMENT_ROOT'] . "/minecraft/downloads";
 
 // Scan for files in the downloads folder
 $files = glob($downloads . "/*.zip");

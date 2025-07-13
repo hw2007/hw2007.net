@@ -1,4 +1,5 @@
 .grid {
     padding-top: var(--pad4);
     padding-bottom: calc(var(--pad2) + 4px);
+    grid-template-columns: 1fr;
 }

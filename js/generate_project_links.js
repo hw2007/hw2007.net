@@ -1,5 +1,17 @@
 const links = [
     {
+        name: "Fortify",
+        description: "A base defense game created as my grade 12 computer science final project.",
+        icon: "fortify",
+        url: "https://github.com/hw2007/Fortify",
+    },
+    {
+        name: "Downloads Cleaner (Swift)",
+        description: "A mac app to help clean up your downloads folder! It was created as a way for me to learn Swift, but it can be a useful tool too!",
+        icon: "downloadscleaner-swift",
+        url: "https://github.com/hw2007/Downloads-Cleaner",
+    },
+    {
         name: "Fireworks",
         description: "A neat little fireworks simulation written with processing java.",
         icon: "fireworks",
@@ -30,7 +42,7 @@ const links = [
         url: "https://github.com/hw2007/Stomp"
     },
     {
-        name: "Downloads Cleaner",
+        name: "Downloads Cleaner (Python)",
         description: "A simple app to clean up your downloads folder, for mac or windows!",
         icon: "downloadscleaner",
         url: "https://github.com/hw2007/DownloadsCleaner",

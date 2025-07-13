@@ -1,1 +1,1 @@
-rsync -avrP --delete --exclude="sync.sh" --exclude="downloads/*" --exclude=".htaccess" --exclude=".git/" --exclude=".gitignore" --exclude="data/*" /opt/hw2007.net/ braden@halsey:/mnt/data/website/
+rsync -avrP --delete --exclude="sync.sh" --exclude="downloads/*" --exclude="minecraft/downloads/*" --exclude=".htaccess" --exclude=".git/" --exclude=".gitignore" --exclude="data/*" /opt/hw2007.net/ braden@halsey:/mnt/data/website/

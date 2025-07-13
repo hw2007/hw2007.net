@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+	<head>
+		<!-- THEMING SCRIPT -->
+		<script src="/js/sitewide-theme-manager.js" defer></script>
+		<!-- Use style.css as our default stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/styles/style.css" />
+        <link rel="stylesheet" type="text/css" href="/styles/projects.css" />
+		<!-- Set the page title to appear in the browser tab -->
+		<title>Minecraft Server - hw2007.net</title>
+		<link rel="icon" href="/assets/favicon.png" type="image/x-icon">
+	</head>
+	<body>
+		<!-- Back button -->
+		<p class="back">
+			<a href="/"><< Back to hw2007.net</a>
+		</p>
+
+		<!-- Title area -->
+		<p class="header">Minecraft Server</p>
+		<p></p>
+		<p>
+			<i>map, downloads, and more!</i>
+		</p>
+
+        <!-- Links -->
+		<!-- Links are filled out by generate_minecraft_links.js -->
+		<div
+            id="container"
+            class="grid"
+        ></div>
+
+        <script src="/js/generate_minecraft_links.js"></script>
+	</body>
+</html>

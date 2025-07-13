@@ -31,7 +31,7 @@ fetch("/php/get_downloads.php")
 		files.forEach((file) => {
 			const mainLinkElement = document.createElement("a");
 			mainLinkElement.classList = "fancy-link";
-			mainLinkElement.href = "/downloads/" + file;
+			mainLinkElement.href = "/minecraft/downloads/" + file;
 			mainLinkElement.style.padding = "4px";
 			mainLinkElement.innerHTML = `
 				<p style="margin-top: auto; margin-bottom: auto; padding-left: 4px;">

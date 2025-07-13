@@ -1,6 +1,7 @@
 const backButtonModes = {
-	arcade: ["arcade.html", "arcade"],
+	arcade: ["/arcade.html", "arcade"],
 	index: ["/", "hw2007.net"],
+	minecraft: ["/minecraft", "minecraft server"]
 };
 
 // Get value of a given URL param
@@ -31,6 +32,7 @@ if (gameName) {
 }
 
 const backButtonMode = getUrlParam("backButtonMode");
+console.log(backButtonMode)
 
 if (backButtonMode) {
 	document.getElementById("back_button_link").href =
