@@ -4,3 +4,4 @@ minecraft/downloads/*
 .gitignore
 .DS_Store
 assets/temp/*
+minecraft/serverguessr_panos/*

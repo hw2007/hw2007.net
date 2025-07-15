@@ -1,5 +1,11 @@
 const updates = [
 	{
+		date: "July 13, 2025",
+		changes: [
+			"The minecraft server downloads & map pages are no longer available directly on the homepage. Instead, a new 'Minecraft Server' page can be used to access them."
+		]
+	},
+	{
 		date: "April 26, 2025",
 		changes: [
 			"Added catppuccin latte and mocha themes.",

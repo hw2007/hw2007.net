@@ -10,6 +10,12 @@ const links = [
         description: "Archives of the server's world from various dates.",
         icon: "downloads",
         url: "downloads.html",
+    },
+    {
+        name: "Minecraft Server GeoGuessr",
+        description: "Share your high scores on the Discord server!",
+        icon: "geoguessr",
+        url: "/game.html?name=Server%20GeoGuessr&backButtonMode=minecraft&url=/minecraft/serverguessr",
     }
 ]
 
