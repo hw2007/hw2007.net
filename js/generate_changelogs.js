@@ -1,5 +1,11 @@
 const updates = [
 	{
+		date: "July 15, 2025",
+		changes: [
+			"Added a new Minecraft Server GeoGuessr game to the Minecraft Server page (Only accessible to server members)."
+		]
+	},
+	{
 		date: "July 13, 2025",
 		changes: [
 			"The minecraft server downloads & map pages are no longer available directly on the homepage. Instead, a new 'Minecraft Server' page can be used to access them."
