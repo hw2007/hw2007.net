@@ -1,21 +1,15 @@
 <?php
-// Validate that the correct secret key is used
-$secret = $_GET["secret"] ?? "";
-if ($secret !== "cow4215") {
-	http_response_code(403);
-	exit("Forbidden");
-}
+require_once "utils.php";
+
+// Validate the shared secret
+validate_secret();
 
 // Get requested or random pano
 $requested_pano = $_GET["request"] ?? "";
 // Random pano
 if ($requested_pano == "") {
 	// Get all panorama folders
-	$folders = glob("minecraft/serverguessr_panos/*", GLOB_ONLYDIR);
-	if (!$folders) {
-		http_response_code(500);
-		exit("No panoramas found");
-	}
+	$folders = get_all_panos();
 
 	// Get excluded panos (panos are never shown twice in one game)
 	$exclude_string = $_GET["exclude"] ?? "";
@@ -31,27 +25,21 @@ if ($requested_pano == "") {
 		http_response_code(500);
 		exit("No valid panoramas available");
 	}
-
+	// Pick random pano
 	$pano = $folders[array_rand($folders)];
 }
 // Verify that requested pano exists
-elseif (!file_exists("minecraft/serverguessr_panos/$requested_pano")) {
+elseif (!file_exists("../minecraft/serverguessr_panos/$requested_pano")) {
 	http_response_code(500);
 	exit("Cannot find pano $requested_pano");
 }
 // Get requested pano
 else {
-	$pano = "minecraft/serverguessr_panos/$requested_pano";
+	$pano = "../minecraft/serverguessr_panos/$requested_pano";
 }
 
 // Read coords.txt
-$coords_file = "$pano/coords.txt";
-if (!file_exists($coords_file)) {
-	http_response_code(500);
-	exit("Missing coords.txt for $pano");
-}
-$coords_text = trim(file_get_contents($coords_file));
-$coords_values = explode(",", $coords_text);
+$coords_values = get_pano_coords($pano);
 
 // Separate coords into x & y
 $x = intval($coords_values[0]);
