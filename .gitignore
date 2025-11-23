@@ -1,5 +1,6 @@
 downloads/*
 minecraft/downloads/*
+minecraft/latest_download/*
 .DS_Store
 .gitignore
 .DS_Store

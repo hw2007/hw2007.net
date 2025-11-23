@@ -8,7 +8,7 @@ const link_hover_element = document.getElementById("link-hover");
 const color_scheme_element = document.getElementById("color-scheme");
 
 function isValidHex(hex) {
-	return /^#[0-9A-F]{6}$/i.test(hex);
+	return (/^#[0-9A-F]{6}$/i.test(hex) || /^#[0-9A-F]{8}$/i.test(hex));
 }
 
 function addHashtagToHex(hex) {

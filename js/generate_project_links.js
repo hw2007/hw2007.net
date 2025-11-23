@@ -61,7 +61,7 @@ links.forEach(link => {
     mainLinkElement.href = link.url;
     mainLinkElement.target = "_blank"
     mainLinkElement.innerHTML = `
-        <img src="assets/project-thumbnails/${link.icon}.png" style="width: 128px; height: 128px; margin-top: auto; margin-bottom: auto; image-rendering: pixelated;">
+        <img src="assets/project-thumbnails/${link.icon}.png" style="width: 128px; height: 128px; margin-top: auto; margin-bottom: auto;">
 		<p style="margin-top: 0px; margin-bottom: auto; padding-left: 8px;"><b>${link.name} ↗︎<br></b>
 			<span style="color: var(--fg-color);">
                 ${link.description}

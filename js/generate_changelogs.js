@@ -1,5 +1,14 @@
 const updates = [
 	{
+		date: "November 22, 2025",
+		changes: [
+			"Added slight padding & corner rounding to the game viewer pages.",
+			"The site themer now allows colours with alpha values to be inputted.",
+			"The thumbnail images on the project & arcade pages are now rendered with anti-aliasing enabled.",
+			"Added a 'Latest Download' option at the top of the server downloads page. This download updates automatically each day. Archived downloads are still available below this new option."
+		]
+	},
+	{
 		date: "July 15, 2025",
 		changes: [
 			"Added a new Minecraft Server GeoGuessr game to the Minecraft Server page (Only accessible to server members)."

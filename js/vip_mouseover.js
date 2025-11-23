@@ -6,6 +6,6 @@ document.addEventListener("mouseover", function(event) {
 
 document.addEventListener("mouseout", function(event) {
 	if (event.target.id === "vip") {
-		document.getElementById("show-on-vip-hover").style.color = "var(--lightgray)";
+		document.getElementById("show-on-vip-hover").style.color = "#ffffff00";
 	}
 });

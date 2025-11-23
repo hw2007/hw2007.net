@@ -146,7 +146,7 @@ games.forEach((game) => {
 		encodeURIComponent(game.url);
 
 	gridItem.innerHTML = `
-        <img src="assets/thumbnails/${game.img}.png" style="width: 192px; height: 150px; margin-top: auto; margin-bottom: auto; image-rendering: pixelated;">
+        <img src="assets/thumbnails/${game.img}.png" style="width: 192px; height: 150px; margin-top: auto; margin-bottom: auto;">
 		<p style="margin-top: 0px; margin-bottom: auto; padding-left: 8px; word-break: normal; overflow-wrap: anywhere;"><b>${game.name}<br></b>
 			<span style="color: var(--fg-color);">
                 ${game.info}<br>
