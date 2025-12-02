@@ -1,5 +1,12 @@
 const updates = [
 	{
+		date: "December 1, 2025",
+		changes: [
+			"Removed the padding & rounded corners from the game viewer pages.",
+			"Adding some very fancy 'glowing' effects on buttons & fancy links."
+		]
+	},
+	{
 		date: "November 22, 2025",
 		changes: [
 			"Added slight padding & corner rounding to the game viewer pages.",

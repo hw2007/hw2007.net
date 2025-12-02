@@ -3,7 +3,7 @@
 <html>
 	<head>
         <!-- THEMING SCRIPT -->
-		<script src="js/sitewide-theme-manager.js"></script>
+		<script src="js/sitewide-theme-manager.js" defer></script>
 		<!-- Use style.css as our default stylesheet -->
 		<link rel="stylesheet" type="text/css" href="styles/style.css" />
         <link rel="stylesheet" type="text/css" href="styles/themer.css" />
@@ -31,35 +31,35 @@
 				<p><b>Or create your own custom theme:</b></p>
                 <div class="input-container">
                     <label style="white-space: nowrap;">Background</label>
-                    <input style="width: 100%" type="text" id="bg-color" value="#000000">
+                    <div class="glowing" style="position: relative; width: 100%;"><input style="width: 100%; box-sizing: border-box;" type="text" id="bg-color" value="#000000"></div>
                 </div>
                 <div class="input-container">
                     <label style="white-space: nowrap;">Text</label>
-                    <input style="width: 100%" type="text" id="fg-color" value="#ffffff">
+                    <div class="glowing" style="position: relative; width: 100%;"><input style="width: 100%; box-sizing: border-box;" type="text" id="fg-color" value="#ffffff"></div>
                 </div>
                 <div class="input-container">
                     <label style="white-space: nowrap;">Border</label>
-                    <input style="width: 100%" type="text" id="gray" value="#505050">
+                    <div class="glowing" style="position: relative; width: 100%;"><input style="width: 100%; box-sizing: border-box;" type="text" id="gray" value="#505050"></div>
                 </div>
                 <div class="input-container">
                     <label style="white-space: nowrap;">Deactivated Text</label>
-                    <input style="width: 100%" type="text" id="lightgray" value="#505050">
+                    <div class="glowing" style="position: relative; width: 100%;"><input style="width: 100%; box-sizing: border-box;" type="text" id="lightgray" value="#505050"></div>
                 </div>
                 <div class="input-container">
                     <label style="white-space: nowrap;">Button</label>
-                    <input style="width: 100%" type="text" id="link" value="#505050">
+                    <div class="glowing" style="position: relative; width: 100%;"><input style="width: 100%; box-sizing: border-box;" type="text" id="link" value="#505050"></div>
                 </div>
                 <div class="input-container">
                     <label style="white-space: nowrap;">Button Hovered</label>
-                    <input style="width: 100%" type="text" id="link-hover" value="#505050">
+                    <div class="glowing" style="position: relative; width: 100%;"><input style="width: 100%; box-sizing: border-box;" type="text" id="link-hover" value="#505050"></div>
                 </div>
                 <div class="input-container" style="justify-content: space-between;">
                     <label style="white-space: nowrap;">Dark Mode</label>
-                    <input type="checkbox" id="color-scheme">
+                    <div class="glowing checkbox-glow" style="position: relative; width: 46.5px; height: 46.5px;"><input type="checkbox" id="color-scheme" onmousedown="event.preventDefault()"></div>
                 </div>	
                 <p>Need a color picker? <a target="_blank" href="https://duckduckgo.com/?q=color+picker&ia=answer">Try this one! ↗︎</a></p>
                 <p>Tip: You can find color palettes <a target="_blank" href="https://www.colormagic.art/palette/explore">here! ↗︎</a></p>
-                <button onclick='applyTheme("custom")' class="fancy-link" style="justify-content: center; width: 100%;">
+                <button onclick='applyTheme("custom")' class="glowing fancy-link" style="justify-content: center; width: 100%;">
                     ✅ Apply
                 </button>
 			</div>

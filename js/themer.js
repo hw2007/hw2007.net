@@ -261,7 +261,7 @@ Object.keys(themes).forEach((theme) => {
 	const themeButton = document.createElement("button");
 	const theme_data = themes[theme];
 
-	themeButton.classList = "fancy-link";
+	themeButton.className = "glowing fancy-link";
 	themeButton.style = "width: 100%;";
 	themeButton.innerHTML = `
             <div style="width: 10px; height: 24px; background-color: ${theme_data["fg-color"]};"></div>

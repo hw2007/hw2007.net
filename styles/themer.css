@@ -3,24 +3,26 @@
 	align-items: center;
 	gap: 8px;
 	margin-bottom: calc(var(--pad2) - 4px);
+	overflow: visible;
 }
 
 .grid {
 	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
+.checkbox-glow.glowing::after {
+	inset: 4px -4px -4px 4px;
+}
+
+.checkbox-glow.glowing::before {
+	inset: 4px -4px -4px 4px;
+}
+
 input[type="checkbox"] {
 	appearance: none;
 	width: 46.5px;
 	height: 46.5px;
-	border: 4px solid var(--gray);
-	background-color: var(--bg-color);
 	position: relative;
-	margin-right: 0px;
-}
-
-input[type="checkbox"]:hover {
-	border-color: var(--fg-color);
 }
 
 input[type="checkbox"]:checked {

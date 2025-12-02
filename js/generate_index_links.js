@@ -73,7 +73,7 @@ const links = [
 
 links.forEach((link) => {
 	const mainLinkElement = document.createElement("a");
-	mainLinkElement.classList = "fancy-link";
+	mainLinkElement.className = "glowing fancy-link";
 	if (link.is_vip) {
 		mainLinkElement.id = "vip";
 		link.name += "*";

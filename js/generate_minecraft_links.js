@@ -21,7 +21,7 @@ const links = [
 
 links.forEach(link => {
     const mainLinkElement = document.createElement("a");
-    mainLinkElement.classList = "fancy-link";
+    mainLinkElement.className = "glowing fancy-link";
     mainLinkElement.style.maxWidth = "var(--std-page-width)"
     mainLinkElement.href = link.url;
     mainLinkElement.innerHTML = `

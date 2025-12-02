@@ -51,7 +51,7 @@
 				</div>
 				<div class="fancy-link" style="transform: translate(0px, 0px); border-color: var(--gray)">
 					<img src="assets/icons/green_light.png" style="width: 24px; height: 24px; margin-top: auto; margin-bottom: auto; image-rendering: pixelated;">
-					<p style='margin-top: auto; margin-bottom: auto; padding-left: 8px;'>Updated last on <span style='color: var(--green)'>Nov 22 2025</span></p>
+					<p style='margin-top: auto; margin-bottom: auto; padding-left: 8px;'>Updated last on <span style='color: var(--green)'>Dec 1 2025</span></p>
 				</div>
 			</div>
 		</div>

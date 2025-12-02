@@ -57,7 +57,7 @@ const links = [
 
 links.forEach(link => {
     const mainLinkElement = document.createElement("a");
-    mainLinkElement.classList = "fancy-link";
+    mainLinkElement.className = "glowing fancy-link";
     mainLinkElement.href = link.url;
     mainLinkElement.target = "_blank"
     mainLinkElement.innerHTML = `

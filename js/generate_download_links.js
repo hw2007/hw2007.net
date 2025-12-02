@@ -7,9 +7,11 @@ function arraymove(arr, fromIndex, toIndex) {
 	}
 }
 
-fetch("/php/get_downloads.php")
-	.then((data) => data.json())
-	.then((files) => {
+async function loadDownloads() {
+	try {
+		var response = await fetch("/php/get_downloads.php");
+		var files = await response.json()
+
 		latest_download = files[0]
 		files.splice(0, 1)
 
@@ -44,7 +46,7 @@ fetch("/php/get_downloads.php")
 
 		files.forEach((file) => {
 			const mainLinkElement = document.createElement("a");
-			mainLinkElement.classList = "fancy-link";
+			mainLinkElement.className = "glowing fancy-link";
 			mainLinkElement.href = "/minecraft/downloads/" + file;
 			mainLinkElement.style.padding = "4px";
 			mainLinkElement.innerHTML = `
@@ -58,7 +60,7 @@ fetch("/php/get_downloads.php")
 			const linkContainer = document.getElementById(world);
 			linkContainer.appendChild(mainLinkElement);
 		});
-	})
-	.catch((error) => {
+	} catch (error) {
 		console.error("PHP request failed with error: ", error);
-	});
+	}
+}

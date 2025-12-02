@@ -2,8 +2,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <html>
 	<head>
-		<!-- THEMING SCRIPT -->
-		<script src="/js/sitewide-theme-manager.js" defer></script>
 		<!-- Use style.css as our default stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/styles/style.css" />
 		<link rel="stylesheet" type="text/css" href="/styles/downloads.css" />
@@ -25,7 +23,7 @@
 		</p>
 		<!-- Links -->
 		<div class="grid" style="padding-top: var(--pad4); ">
-			<a class="fancy-link" id="latest-link">
+			<a class="glowing fancy-link" id="latest-link">
 				<img src="/assets/icons/swf_circle.png" style="width: 96px; height: 96px; margin-top: auto; margin-bottom: auto;">
 				<p style="margin-top: 0px; margin-bottom: auto; padding-left: 8px;" id="latest-text">
 					Placeholder text
@@ -42,5 +40,14 @@
 		</div>
 
 		<script src="/js/generate_download_links.js"></script>
+
+		<script>
+			window.addEventListener('load', async () => {
+				await window.loadDownloads();
+				const script = document.createElement('script');
+				script.src = '/js/sitewide-theme-manager.js';
+				document.body.appendChild(script);
+			});
+		</script>
 	</body>
 </html>

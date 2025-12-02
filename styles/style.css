@@ -131,12 +131,80 @@ a:hover {
 	margin-bottom: 0px;
 	transition: transform 0.1s ease;
 	position: relative;
+	overflow: visible;
+}
+
+.glowing::after {
+	content: "";
+	position: absolute;
+	inset: -4px;
+	pointer-events: none;
+
+	background: radial-gradient(
+		circle 320px at var(--x) var(--y),
+		var(--fg-color),
+		transparent 100%
+	);
+
+	/* rectangular mask: edges fully transparent, middle semi-transparent */
+	-webkit-mask:
+		linear-gradient(#000 0 0) content-box,
+		linear-gradient(#000 0 0) border-box;
+	-webkit-mask-composite: xor;
+	mask:
+		linear-gradient(#000 0 0) content-box,
+		linear-gradient(#000 0 0) border-box;
+	mask-composite: exclude;
+
+	padding: 4px; /* matches the border thickness */
+	opacity: 0.35;
+}
+
+.glowing:hover::after {
+	background: radial-gradient(
+		circle 800px at var(--x) var(--y),
+		var(--fg-color),
+		transparent 100%
+	);
+
+	opacity: 1;
+}
+
+.glowing::before {
+	content: "";
+	position: absolute;
+	inset: 0px;
+	pointer-events: none;
+	z-index: 1;
+
+	background: radial-gradient(
+		circle 256px at var(--x) var(--y),
+		var(--fg-color),
+		transparent 100%
+	);
+
+	/* rectangular mask: edges fully transparent, middle semi-transparent */
+	-webkit-mask:
+		linear-gradient(rgba(0,0,0,0.8) 0 0) content-box,
+		linear-gradient(#000 0 0) border-box;
+	-webkit-mask-composite: xor;
+	mask:
+		linear-gradient(rgba(0,0,0,0.8) 0 0) content-box,
+		linear-gradient(#000 0 0) border-box;
+	mask-composite: exclude;
+
+	padding: 0px; /* matches the border thickness */
+	opacity: 0;
+}
+
+.glowing:hover::before {
+	opacity: 1;
 }
 
 .fancy-link:hover {
-	border-color: var(--fg-color);
 	transform: translate(-4px, -4px);
 	z-index: 10;
+	transition: transform 0.1s ease;
 }
 
 .fancy-link:active {
@@ -171,8 +239,6 @@ input {
 	border-width: 4px;
 	background-color: var(--bg-color);
 	position: relative;
-	margin-top: -4px;
-	margin-bottom: 0px;
 	color: var(--fg-color);
 }
 
@@ -180,13 +246,12 @@ input::placeholder {
 	color: var(--lightgray);
 }
 
-input:hover {
-	border-color: var(--fg-color);
-	z-index: 10;
-}
-
 input:focus {
 	border-color: var(--fg-color);
 	outline: none;
 	z-index: 10;
+}
+
+div.glowing::after {
+	inset: 0px;
 }

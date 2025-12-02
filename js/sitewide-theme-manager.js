@@ -1,3 +1,7 @@
+// This script is loaded by all pages in the site
+
+
+// THEMING CODE
 const bg_color = localStorage.getItem("bg-color");
 const fg_color = localStorage.getItem("fg-color");
 const gray = localStorage.getItem("gray");
@@ -25,3 +29,17 @@ applyColor(link_hover, "link-hover");
 if (color_scheme) {
 	document.documentElement.style.setProperty("color-scheme", color_scheme);
 }
+
+
+// BUTTON HOVER EFFECT
+const buttons = document.querySelectorAll(".glowing");
+
+window.addEventListener("mousemove", e => {
+	buttons.forEach(btn => {
+		const rect = btn.getBoundingClientRect();
+		const x = e.clientX - rect.left;
+		const y = e.clientY - rect.top;
+		btn.style.setProperty("--x", x + "px");
+		btn.style.setProperty("--y", y + "px");
+	});
+});

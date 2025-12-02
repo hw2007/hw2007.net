@@ -136,7 +136,7 @@ const grid = document.getElementById("game-container");
 
 games.forEach((game) => {
 	const gridItem = document.createElement("a");
-	gridItem.className = "fancy-link";
+	gridItem.className = "glowing fancy-link";
 	gridItem.href =
 		"/game.html?name=" +
 		game.name +
