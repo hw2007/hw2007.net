@@ -1,2 +1,7 @@
-minecraft/serverguessr/* filter=lfs diff=lfs merge=lfs -text
 minecraft/serverguessr/index.pck filter=lfs diff=lfs merge=lfs -text
+minecraft/serverguessr/index.png filter=lfs diff=lfs merge=lfs -text
+minecraft/serverguessr/index.wasm filter=lfs diff=lfs merge=lfs -text
+minecraft/serverguessr/index.audio.worklet.js filter=lfs diff=lfs merge=lfs -text
+minecraft/serverguessr/index.html filter=lfs diff=lfs merge=lfs -text
+minecraft/serverguessr/index.js filter=lfs diff=lfs merge=lfs -text
+minecraft/serverguessr/* filter=lfs diff=lfs merge=lfs -text
