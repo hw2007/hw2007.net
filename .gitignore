@@ -3,6 +3,7 @@ minecraft/downloads/*
 minecraft/latest_download/*
 .DS_Store
 .gitignore
-.DS_Store
 assets/temp/*
 minecraft/serverguessr_panos/*
+PASSWORD
+data/*
