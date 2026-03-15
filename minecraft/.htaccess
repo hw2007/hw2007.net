@@ -1,5 +1,5 @@
 AuthType Form
-AuthUserFile /opt/hw2007.net/PASSWORD
+AuthUserFile /srv/http/hw2007.net/PASSWORD
 AuthFormLoginRequiredLocation "/login.html?handler=minecraft-login"
 AuthName "Protected"
 Session On
