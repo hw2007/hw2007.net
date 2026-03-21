@@ -49,20 +49,6 @@ const links = [
 		is_vip: false,
 	},
 	{
-		name: "Scratch",
-		icon: "scratch",
-		html: "https://scratch.mit.edu/users/hotwheel2007/",
-		catagory: "socials",
-		is_vip: false,
-	},
-	{
-		name: "YouTube",
-		icon: "youtube",
-		html: "https://www.youtube.com/@hw2007",
-		catagory: "socials",
-		is_vip: false,
-	},
-	{
 		name: "GitHub",
 		icon: "github",
 		html: "https://github.com/hw2007",
