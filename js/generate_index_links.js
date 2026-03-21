@@ -28,9 +28,9 @@ const links = [
 		is_vip: false,
 	},
 	{
-		name: "Site Changelogs",
-		icon: "changelogs",
-		html: "changelogs.html",
+		name: "Source Code",
+		icon: "code",
+		html: "https://github.com/hw2007/hw2007.net",
 		catagory: "public",
 		is_vip: false,
 	},
