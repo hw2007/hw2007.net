@@ -1,7 +1,0 @@
-AuthType Form
-AuthUserFile /srv/http/hw2007.net/PASSWORD
-AuthFormLoginRequiredLocation "/login.html?handler=minecraft-login"
-AuthName "Protected"
-Session On
-SessionCookieName session path=/
-Require valid-user
