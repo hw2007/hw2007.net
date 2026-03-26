@@ -1,5 +1,11 @@
 const links = [
     {
+        name: "LegacyLauncher",
+        description: "A simple launcher for Minecraft: Legacy Console Edition",
+        icon: "legacylauncher",
+        url: "https://github.com/hw2007/LegacyLauncher"
+    },
+    {
         name: "Fortify",
         description: "A base defense game created as my grade 12 computer science final project.",
         icon: "fortify",
