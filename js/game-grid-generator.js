@@ -1,5 +1,14 @@
 const games = [
 	{
+		name: "Hexagonal Siege",
+		info: "A turn-based strategy game, made in 3 days for the Saskatoon Game Jam.",
+		img: "hexagonalsiege",
+		url:
+			"itchembed.html?url=" +
+			encodeURIComponent("https://itch.io/embed-upload/16338116?color=000000"),
+		controls: "Point & Click, Mouse Wheel, Q, Space"
+	},
+	{
 		name: "Market Miner",
 		info: "An ore-themed clicker game, with a fluctuating ore stock market!",
 		img: "marketminer",
