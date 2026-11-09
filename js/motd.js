@@ -32,7 +32,7 @@ const messages = [
 	"hello there.",
 	"general kenobi.",
 	"held together by duct tape.",
-	"brought to you by hw2007 and chatgpt!",
+	"THERE ARE FOUR LIGHTS!",
 	"engage!",
 	"welcome, traveller!",
 	"there are four lights!",
