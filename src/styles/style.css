@@ -1,42 +1,4 @@
 @font-face {
-	font-family: "3270";
-	src: url("/public/fonts/3270/3270NerdFont-Regular.ttf") format("truetype");
-}
-
-@font-face {
-	font-family: "Departure";
-	src: url("/public/fonts/DepartureMono/DepartureMonoNerdFont-Regular.otf") format("truetype");
-}
-
-@font-face {
-	font-family: "Annotation";
-	src: url("/public/fonts/AnnotationMono/AnnotationMNerdFont-Regular.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-	font-family: "Annotation";
-	src: url("/public/fonts/AnnotationMono/AnnotationMNerdFont-Bold.ttf") format("truetype");
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-	font-family: "Annotation";
-	src: url("/public/fonts/AnnotationMono/AnnotationMNerdFont-Italic.ttf") format("truetype");
-    font-weight: 400;
-    font-style: italic;
-}
-
-@font-face {
-	font-family: "Annotation";
-	src: url("/public/fonts/AnnotationMono/AnnotationMNerdFont-BoldItalic.ttf") format("truetype");
-    font-weight: 700;
-    font-style: italic;
-}
-
-@font-face {
 	font-family: "Tiny5";
 	src: url("/public/fonts/Tiny5/tiny5.solid-regular.otf") format("opentype");
     font-weight: 400;
@@ -45,6 +7,20 @@
 
 @font-face {
 	font-family: "Tiny5";
+	src: url("/public/fonts/Tiny5/tiny5.solid-bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: "Tiny5 CRT";
+	src: url("/public/fonts/Tiny5/tiny5.crt-regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: "Tiny5 CRT";
 	src: url("/public/fonts/Tiny5/tiny5.crt-regular.otf") format("opentype");
     font-weight: 700;
     font-style: normal;
@@ -63,6 +39,7 @@
 
     /* Font */
     --font-family: "Tiny5", serif;
+    --font-family-secondary: "Tiny5 CRT", serif;
     --font-size: 24px;
 }
 
@@ -80,6 +57,8 @@ body {
 
 h1 {
     font-size: 72px;
+    font-weight: 400;
+    font-family: var(--font-family-secondary);
 }
 
 a {
@@ -93,11 +72,12 @@ a:hover {
 .fancy-button {
     /* Layout & sizing */
     display: inline-flex;
-    width: 100%;
+    width: auto;
+    height: auto;
     align-items: center;
     text-align: left;
     position: relative;
-    box-sizing: border-box;
+    box-sizing:border-box;
 
     /* Appearance*/
     padding: 8px;
@@ -153,7 +133,7 @@ a:hover {
 	mask-composite: exclude;
 
 	padding: 4px; /* matches the border thickness */
-	opacity: 0.35;
+	opacity: 0.25;
 }
 
 .fancy-button:hover::after {
@@ -199,7 +179,7 @@ a:hover {
 
 .button-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 0px;
 }
 

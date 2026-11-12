@@ -1,8 +1,37 @@
 ---
-import Layout from "../layouts/Layout.astro"
+import Layout from "../layouts/BaseLayout.astro"
 ---
 
-<Layout title="hw2007.net in Astro" tagline="welcome home!">
+<Layout title="hw2007.net" tagline="welcome home!">
+    <style>
+        @media (max-width: 750px) {
+            .desktop-only {
+                display: none;
+            }
+        }
+        .net-text {
+            text-decoration: none;
+        }
+        .net-text:hover {
+            font-family: var(--font-family);
+            font-weight: 700;
+        }
+        .net-text span:first-child {
+            color: var(--lightblue);
+        }
+        .net-text span{
+            color: var(--blue);
+        }
+        .net-text span:last-child {
+            color: var(--purple);
+        }
+        .net-text:hover span {
+            color:var(--fg);
+        }
+    </style>
+    <Fragment slot="header">
+        <span class="desktop-only">Welcome to </span>hw2007.<a class="net-text" href="/demo"><span>n</span><span>e</span><span>t</span></a><span class="desktop-only">!</span>
+    </Fragment>
     <p>
         Welcome to the home page of my Astro site!
         <br>
