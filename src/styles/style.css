@@ -1,3 +1,55 @@
+@font-face {
+	font-family: "3270";
+	src: url("/public/fonts/3270/3270NerdFont-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Departure";
+	src: url("/public/fonts/DepartureMono/DepartureMonoNerdFont-Regular.otf") format("truetype");
+}
+
+@font-face {
+	font-family: "Annotation";
+	src: url("/public/fonts/AnnotationMono/AnnotationMNerdFont-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: "Annotation";
+	src: url("/public/fonts/AnnotationMono/AnnotationMNerdFont-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: "Annotation";
+	src: url("/public/fonts/AnnotationMono/AnnotationMNerdFont-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+	font-family: "Annotation";
+	src: url("/public/fonts/AnnotationMono/AnnotationMNerdFont-BoldItalic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+	font-family: "Tiny5";
+	src: url("/public/fonts/Tiny5/tiny5.solid-regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: "Tiny5";
+	src: url("/public/fonts/Tiny5/tiny5.crt-regular.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
 :root {
     /* Colours */
 	--lightblue: #0099ff;
@@ -10,8 +62,8 @@
 	--green: #67c621;
 
     /* Font */
-    --font-family: Arial;
-    --font-size: 16px;
+    --font-family: "Tiny5", serif;
+    --font-size: 24px;
 }
 
 body {
@@ -24,6 +76,10 @@ body {
     margin-right: auto;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+h1 {
+    font-size: 72px;
 }
 
 a {
