@@ -15,6 +15,20 @@ const { title, tagline } = Astro.props;
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
         <title>{title}</title>
+
+        <script>
+            // Set the --x & --y variables that fancy-button relies on for the glowing effect based on mouse position
+            const buttons = document.querySelectorAll(".fancy-button");
+            window.addEventListener("mousemove", e => {
+                buttons.forEach(btn => {
+                    const rect = btn.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    btn.style.setProperty("--x", x + "px");
+                    btn.style.setProperty("--y", y + "px");
+                });
+            });
+        </script>
     </head>
     <body style="text-align: center;">
         <!-- Page title -->
