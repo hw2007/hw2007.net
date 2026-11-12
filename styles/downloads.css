@@ -1,4 +1,0 @@
-.grid {
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    row-gap: 0px;
-}

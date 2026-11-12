@@ -1,0 +1,12 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+a {
+    color: lightskyblue;
+}
+
+a:hover {
+    color: darkorchid;
+}
