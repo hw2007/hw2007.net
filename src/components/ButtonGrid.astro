@@ -1,0 +1,44 @@
+---
+export interface Item {
+    title: string;
+    description?: string;
+    image?: string;
+    href: string;
+}
+
+interface Props {
+    items: Item[];
+    maxCols?: number;
+    title?: string;
+}
+
+const { items, maxCols = 1} = Astro.props;
+---
+
+<style>
+    .button-grid {
+        display: grid;
+        grid-template-columns: repeat(var(--max-columns), 1fr);
+        gap: 0px;
+    }
+
+    /* Overlapping borders */
+    .button-grid .fancy-button {
+        margin-top: -4px;
+        margin-left: -4px;
+    }
+</style>
+
+<div class="button-grid" style={`--max-columns: ${maxCols}`}>
+    {items.map((item) => (
+        <a class="fancy-button" href={item.href}>
+            <p>
+                {item.title}
+                <br>
+                <span style="color: var(--fg)">
+                    {item.description}
+                </span>
+            </p>
+        </a>
+    ))}
+</div>

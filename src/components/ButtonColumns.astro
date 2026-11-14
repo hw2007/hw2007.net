@@ -1,0 +1,36 @@
+---
+import ButtonGrid from "./ButtonGrid.astro";
+import type { Item } from "./ButtonGrid.astro";
+
+interface Column {
+    title?: string;
+    items: Item[];
+}
+
+interface Props {
+    columns: Column[];
+}
+
+const { columns } = Astro.props;
+---
+
+<style>
+    .button-cols {
+        display: grid;
+        grid-template-columns: repeat(var(--max-columns), 1fr);
+        gap: 12px;
+    }
+</style>
+
+<div class="button-cols" style={`--max-columns: ${columns.length}`}>
+    {columns.map((col) => (
+        <div>
+            { // Only create the title paragraph if col.title is set
+                col.title && (
+                    <p style="margin-bottom: 16px;">{col.title}</p>
+                )
+            }
+            <ButtonGrid items={col.items} />
+        </div>
+    ))}
+</div>

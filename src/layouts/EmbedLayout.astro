@@ -1,0 +1,22 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import BackButton from "../components/BackButton.astro";
+
+interface Props {
+    title: string;
+    src: string;
+}
+
+const { title, src } = Astro.props;
+---
+
+<BaseLayout title={title}>
+    <BackButton />
+    <main style="text-align: center;">
+        <!-- Page title -->
+        <p>{title}</p>
+
+        <!-- Embedded site -->
+        <iframe src={src} title={title} allowfullscreen />
+    </main>
+</BaseLayout>

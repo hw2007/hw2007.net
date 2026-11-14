@@ -1,0 +1,40 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import BackButton from "../components/BackButton.astro";
+
+interface Props {
+    title: string;
+    tagline: string;
+    showBackButton?: boolean;
+}
+
+const { title, tagline, showBackButton = true} = Astro.props;
+---
+
+<BaseLayout title={title}>
+    {showBackButton && (
+        <BackButton />
+    )}
+    <main style="text-align: center;">
+        <!-- Page title -->
+        <h1 style="
+            margin-top: 72px;
+            margin-bottom: 60px;
+            margin-left: 5px;
+            margin-right: 5px;
+        ">
+            <!-- Wrap the header in a slot so that it can be customized (e.g. on the index page) -->
+            <slot name="header">{title}</slot>
+        </h1>
+
+        <!-- Page subtitle/tagline -->
+        <p style="
+            margin-top: 0px;
+            margin-bottom: 60px;
+            margin-left: 5px;
+            margin-right: 5px;
+        "><i>{tagline}</i></p>
+        
+        <slot />
+    </main>
+</BaseLayout>

@@ -1,0 +1,16 @@
+---
+interface Props {
+    href?: string;
+}
+
+const { href = "/" } = Astro.props;
+---
+
+<a href={href} style="
+    position: absolute;
+    top: -6px;
+    left: 0px;
+    padding: 20px;
+">
+    ← Back
+</a>

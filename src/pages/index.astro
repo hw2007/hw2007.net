@@ -1,8 +1,8 @@
 ---
-import Layout from "../layouts/BaseLayout.astro"
+import StandardLayout from "../layouts/StandardLayout.astro"
 ---
 
-<Layout title="hw2007.net" tagline="welcome home!">
+<StandardLayout title="hw2007.net" tagline="welcome home!" showBackButton={false}>
     <style>
         @media (max-width: 750px) {
             .desktop-only {
@@ -39,4 +39,4 @@ import Layout from "../layouts/BaseLayout.astro"
             CSS Demo
         </a>
     </p>
-</Layout>
+</StandardLayout>

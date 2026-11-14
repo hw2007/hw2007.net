@@ -3,10 +3,9 @@ import "../styles/style.css"
 
 interface Props {
     title: string;
-    tagline: string;
 }
 
-const { title, tagline } = Astro.props;
+const { title } = Astro.props;
 ---
 
 <html lang="en">
@@ -30,27 +29,9 @@ const { title, tagline } = Astro.props;
             });
         </script>
     </head>
-    <body style="text-align: center;">
-        <!-- Page title -->
-        <h1 style="
-            margin-top: 60px;
-            margin-bottom: 60px;
-            margin-left: 5px;
-            margin-right: 5px;
-        ">
-            <!-- Wrap the header in a slot so that it can be customized (e.g. on the index page) -->
-            <slot name="header">{title}</slot>
-        </h1>
-
-        <!-- Page subtitle/tagline -->
-        <p style="
-            margin-top: 0px
-            margin-bottom: 35px
-            margin-left: 5px
-            margin-right: 5px
-        "><i>{tagline}</i></p>
+    <body>
 
         <slot />
-
+        
     </body>
 </html>

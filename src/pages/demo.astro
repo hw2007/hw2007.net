@@ -1,26 +1,86 @@
 ---
-import Layout from "../layouts/LayoutWithBack.astro"
+import StandardLayout from "../layouts/StandardLayout.astro"
+import ButtonGrid from "../components/ButtonGrid.astro";
+import ButtonColumns from "../components/ButtonColumns.astro";
+
+const items = [
+    {
+        title: "Item 1",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+        href: "/"
+    },
+    {
+        title: "Item 2",
+        href: "/"
+    },
+    {
+        title: "Item 3",
+        href: "/"
+    }
+];
+
+const columns = [
+    {
+        title: "Column 1",
+        items: [
+            {
+                title: "Item 1",
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+                href: "/"
+            },
+            {
+                title: "Item 2",
+                href: "/"
+            },
+            {
+                title: "Item 3",
+                href: "/"
+            }
+        ]
+    },
+    {
+        title: "",
+        items: [
+            {
+                title: "Item 1",
+                href: "/"
+            },
+            {
+                title: "Item 2",
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+                href: "/"
+            },
+            {
+                title: "Item 3",
+                href: "/"
+            },
+            {
+                title: "Item 4",
+                href: "/"
+            },
+            {
+                title: "Item 5",
+                href: "/"
+            }
+        ]
+    }
+];
 ---
 
-<Layout title="CSS Demo" tagline="see what various elements look like under the sitewide styling">
+<StandardLayout title="CSS Demo" tagline="see what various elements look like under the sitewide styling" showBackButton={true}>
     <h1>h1</h1>
-    <h2>h2</h2>
-    <h3>h3</h3>
-    <h4>h4</h4>
-    <h5>h5</h5>
-    <h6>h6</h6>
     <a href="/demo">Regular link</a>
+    <br>
     <br>
     <a href="/demo" class="fancy-button">Link with class="fancy-button"</a>
     <br>
+    <br>
     <button class="fancy-button">Button with class="fancy-button"</button>
     <br>
-    <p>Grid of fancy-buttons:</p>
-    <div class="button-grid">
-        <a href="/demo" class="fancy-button">Link</a>
-        <a href="/demo" class="fancy-button">Link</a>
-        <button class="fancy-button">Button</button>
-        <button class="fancy-button">Button</button>
-        <a href="/demo" class="fancy-button">Link</a>
-    </div>
-</Layout>
+    <br>
+    <p>ButtonGrid:</p>
+    <ButtonGrid items={items} />
+    <br>
+    <p>ButtonColumns:</p>
+    <ButtonColumns columns={columns} />
+</StandardLayout>
