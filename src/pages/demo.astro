@@ -26,6 +26,7 @@ const columns = [
             {
                 title: "Item 1",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+                image: "/src/icons/dev.png",
                 href: "/"
             },
             {
@@ -81,6 +82,9 @@ const columns = [
     <p>ButtonGrid:</p>
     <ButtonGrid items={items} />
     <br>
-    <p>ButtonColumns:</p>
+    <p>ButtonColumns (with automatic image height):</p>
     <ButtonColumns columns={columns} />
+    <br>
+    <p>ButtonColumns (with 128px image height):</p>
+    <ButtonColumns columns={columns} imageHeight={128} />
 </StandardLayout>

@@ -1,5 +1,54 @@
 ---
-import StandardLayout from "../layouts/StandardLayout.astro"
+import StandardLayout from "../layouts/StandardLayout.astro";
+import ButtonColumns from "../components/ButtonColumns.astro";
+
+const pages = [
+    {
+        title: "All the pages!",
+        items: [
+            {
+                title: "Arcade",
+                image: "/src/icons/index/arcade.png",
+                href: "/arcade"
+            },
+            {
+                title: "Projects",
+                image: "/src/icons/index/projects.png",
+                href: "/projects"
+            },
+            {
+                title: "Internet Speed Test",
+                image: "/src/icons/index/speedtest.png",
+                href: "/speedtest"
+            },
+            {
+                title: "Source Code",
+                image: "/src/icons/index/code.png",
+                href: "https://github.com/hw2007/hw2007.net"
+            },
+            {
+                title: "Minecraft Server",
+                image: "/src/icons/index/minecraftserver.png",
+                href: "/minecraft"
+            }
+        ]
+    },
+    {
+        title: "More from me on...",
+        items: [
+            {
+                title: "Itch.io",
+                image: "/src/icons/index/itchio.png",
+                href: "https://hw2007.itch.io/"
+            },
+            {
+                title: "GitHub",
+                image: "/src/icons/index/github.png",
+                href: "https://github.com/hw2007"
+            }
+        ]
+    }
+];
 ---
 
 <StandardLayout title="hw2007.net" tagline="welcome home!" showBackButton={false}>
@@ -32,11 +81,5 @@ import StandardLayout from "../layouts/StandardLayout.astro"
     <Fragment slot="header">
         <span class="desktop-only">Welcome to </span>hw2007.<a class="net-text" href="/demo"><span>n</span><span>e</span><span>t</span></a><span class="desktop-only">!</span>
     </Fragment>
-    <p>
-        Welcome to the home page of my Astro site!
-        <br>
-        <a href="/demo">
-            CSS Demo
-        </a>
-    </p>
+    <ButtonColumns columns={pages} imageHeight={32} />
 </StandardLayout>
