@@ -1,4 +1,6 @@
 ---
+import { map } from 'astro:schema';
+
 export interface Item {
     title: string;
     description?: string;
@@ -9,10 +11,10 @@ export interface Item {
 interface Props {
     items: Item[];
     maxCols?: number;
-    title?: string;
+    imageHeight?: string; // string like "64px"
 }
 
-const { items, maxCols = 1} = Astro.props;
+const { items, maxCols = 1, imageHeight} = Astro.props;
 ---
 
 <style>
@@ -32,6 +34,14 @@ const { items, maxCols = 1} = Astro.props;
 <div class="button-grid" style={`--max-columns: ${maxCols}`}>
     {items.map((item) => (
         <a class="fancy-button" href={item.href}>
+            { // Only create the image if item.image is set
+                item.image && (
+                    <img src={item.image} style={`
+                        margin-right: 8px;
+                        height: ${imageHeight ?? "auto"};
+                    `}>
+                )
+            }
             <p>
                 {item.title}
                 <br>

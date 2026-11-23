@@ -9,20 +9,22 @@ interface Column {
 
 interface Props {
     columns: Column[];
+    imageHeight?: number; // measured in px
+    minColumnWidth?: number; // measured in px
 }
 
-const { columns } = Astro.props;
+const { columns, imageHeight, minColumnWidth=256} = Astro.props;
 ---
 
 <style>
     .button-cols {
         display: grid;
-        grid-template-columns: repeat(var(--max-columns), 1fr);
-        gap: 12px;
+        grid-template-columns: repeat(auto-fit, minmax(var(--min-column-width), 1fr));
+        gap: 16px;
     }
 </style>
 
-<div class="button-cols" style={`--max-columns: ${columns.length}`}>
+<div class="button-cols" style={`--min-column-width: ${minColumnWidth}px`}>
     {columns.map((col) => (
         <div>
             { // Only create the title paragraph if col.title is set
@@ -30,7 +32,7 @@ const { columns } = Astro.props;
                     <p style="margin-bottom: 16px;">{col.title}</p>
                 )
             }
-            <ButtonGrid items={col.items} />
+            <ButtonGrid items={col.items} imageHeight={imageHeight+"px"} />
         </div>
     ))}
 </div>
