@@ -11,16 +11,17 @@ export interface Item {
 interface Props {
     items: Item[];
     maxCols?: number;
+    minColWidth?: number // measured in px
     imageHeight?: string; // string like "64px"
 }
 
-const { items, maxCols = 1, imageHeight} = Astro.props;
+const { items, maxCols = 1, minColWidth=0, imageHeight} = Astro.props;
 ---
 
 <style>
     .button-grid {
         display: grid;
-        grid-template-columns: repeat(var(--max-columns), 1fr);
+       grid-template-columns: repeat(auto-fit, minmax(max(var(--min-column-width), calc(100% / var(--max-columns))), 1fr));
         gap: 0px;
     }
 
@@ -31,7 +32,7 @@ const { items, maxCols = 1, imageHeight} = Astro.props;
     }
 </style>
 
-<div class="button-grid" style={`--max-columns: ${maxCols}`}>
+<div class="button-grid" style={`--max-columns: ${maxCols}; --min-column-width: ${minColWidth}px`}>
     {items.map((item) => (
         <a class="fancy-button" href={item.href}>
             { // Only create the image if item.image is set
