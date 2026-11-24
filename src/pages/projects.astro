@@ -1,75 +1,71 @@
 ---
 import StandardLayout from "../layouts/StandardLayout.astro";
-import ButtonColumns from "../components/ButtonColumns.astro";
+import ButtonGrid from "../components/ButtonGrid.astro";
 
-const pages = [
+const projects = [
     {
-        items: [
-            {
-                title: "LegacyLauncher",
-                description: "A simple launcher for Minecraft: Legacy Console Edition",
-                image: "/src/icons/projects/legacylauncher.png",
-                href: "https://github.com/hw2007/LegacyLauncher"
-            },
-            {
-                title: "Fortify",
-                description: "A base defense game created as my grade 12 computer science final project.",
-                image: "/src/icons/projects/fortify.png",
-                href: "https://github.com/hw2007/Fortify"
-            },
-            {
-                title: "Downloads Cleaner (Swift)",
-                description: "A mac app to help clean up your downloads folder! It was created as a way for me to learn Swift, but it can be a useful tool too!",
-                image: "/src/icons/projects/downloadscleaner-swift.png",
-                href: "https://github.com/hw2007/Downloads-Cleaner"
-            },
-            {
-                title: "Fireworks",
-                description: "A neat little fireworks simulation written with processing java.",
-                image: "/src/icons/projects/fireworks.png",
-                href: "https://github.com/hw2007/Fireworks"
-            },
-            {
-                title: "Übersicht NASA Image",
-                description: "An Übersicht widget to display NASA's Astronomy Picture of the Day (APOD) on your mac desktop.",
-                image: "/src/icons/projects/apod.png",
-                href: "https://github.com/hw2007/ubersicht-nasa-image"
-            },
-            {
-                title: "Übersicht Neofetch",
-                description: "An Übersicht widget to display neofetch results on your mac desktop.",
-                image: "/src/icons/projects/neofetch.png",
-                href: "https://github.com/hw2007/ubersicht-neofetch"
-            },
-            {
-                title: "Easycraft",
-                description: "A simple CLI-based Minecraft: Java Edition server manager for mac & linux!",
-                image: "/src/icons/projects/easycraft.png",
-                href: "https://github.com/hw2007/Easycraft"
-            },
-            {
-                title: "Stomp",
-                description: "A game where you can experience what it's like to be a bug getting squashed!",
-                image: "/src/icons/projects/stomp.png",
-                href: "https://github.com/hw2007/Stomp"
-            },
-            {
-                title: "Downloads Cleaner (Python)",
-                description: "A simple app to clean up your downloads folder, for mac or windows!",
-                image: "/src/icons/projects/downloadscleaner.png",
-                href: "https://github.com/hw2007/DownloadsCleaner"
-            },
-            {
-                title: "Tick-oaT-Two",
-                description: "A CLI version of a tic-tac-toe variation created by Oats Jenkins on YouTube.",
-                image: "/src/icons/projects/tick-oat-two.png",
-                href: "https://github.com/hw2007/Tick-oaT-Two"
-            }
-        ]
+        title: "LegacyLauncher",
+        description: "A simple launcher for Minecraft: Legacy Console Edition",
+        image: "/src/icons/projects/legacylauncher.png",
+        href: "https://github.com/hw2007/LegacyLauncher"
+    },
+    {
+        title: "Fortify",
+        description: "A base defense game created as my grade 12 computer science final project.",
+        image: "/src/icons/projects/fortify.png",
+        href: "https://github.com/hw2007/Fortify"
+    },
+    {
+        title: "Downloads Cleaner (Swift)",
+        description: "A mac app to help clean up your downloads folder! It was created as a way for me to learn Swift, but it can be a useful tool too!",
+        image: "/src/icons/projects/downloadscleaner-swift.png",
+        href: "https://github.com/hw2007/Downloads-Cleaner"
+    },
+    {
+        title: "Fireworks",
+        description: "A neat little fireworks simulation written with processing java.",
+        image: "/src/icons/projects/fireworks.png",
+        href: "https://github.com/hw2007/Fireworks"
+    },
+    {
+        title: "Übersicht NASA Image",
+        description: "An Übersicht widget to display NASA's Astronomy Picture of the Day (APOD) on your mac desktop.",
+        image: "/src/icons/projects/apod.png",
+        href: "https://github.com/hw2007/ubersicht-nasa-image"
+    },
+    {
+        title: "Übersicht Neofetch",
+        description: "An Übersicht widget to display neofetch results on your mac desktop.",
+        image: "/src/icons/projects/neofetch.png",
+        href: "https://github.com/hw2007/ubersicht-neofetch"
+    },
+    {
+        title: "Easycraft",
+        description: "A simple CLI-based Minecraft: Java Edition server manager for mac & linux!",
+        image: "/src/icons/projects/easycraft.png",
+        href: "https://github.com/hw2007/Easycraft"
+    },
+    {
+        title: "Stomp",
+        description: "A game where you can experience what it's like to be a bug getting squashed!",
+        image: "/src/icons/projects/stomp.png",
+        href: "https://github.com/hw2007/Stomp"
+    },
+    {
+        title: "Downloads Cleaner (Python)",
+        description: "A simple app to clean up your downloads folder, for mac or windows!",
+        image: "/src/icons/projects/downloadscleaner.png",
+        href: "https://github.com/hw2007/DownloadsCleaner"
+    },
+    {
+        title: "Tick-oaT-Two",
+        description: "A CLI version of a tic-tac-toe variation created by Oats Jenkins on YouTube.",
+        image: "/src/icons/projects/tick-oat-two.png",
+        href: "https://github.com/hw2007/Tick-oaT-Two"
     }
 ];
 ---
 
 <StandardLayout title="Projects" tagline="things I have worked on, or am currently working on.">
-    <ButtonColumns columns={pages} imageHeight={128} />
+    <ButtonGrid items={projects} imageHeight="128px" />
 </StandardLayout>
