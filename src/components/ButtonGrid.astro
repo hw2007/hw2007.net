@@ -39,6 +39,7 @@ const { items, maxCols = 1, minColWidth=0, imageHeight} = Astro.props;
                 item.image && (
                     <img src={item.image} style={`
                         margin-right: 8px;
+                        image-rendering: pixelated;
                         height: ${imageHeight ?? "auto"};
                     `}>
                 )
