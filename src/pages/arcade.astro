@@ -1,0 +1,16 @@
+---
+import StandardLayout from "../layouts/StandardLayout.astro";
+import ButtonGrid from "../components/ButtonGrid.astro";
+import { games } from "../data/games";
+
+const gameButtons = games.map((game) => ({
+    title: game.title,
+    description: game.description,
+    image: game.thumbnail,
+    href: `/games/${game.title}`
+}))
+---
+
+<StandardLayout title="Arcade" tagline="no quarters needed!">
+    <ButtonGrid items={gameButtons} maxCols={2} minColWidth={360} imageHeight="128px"/>
+</StandardLayout>

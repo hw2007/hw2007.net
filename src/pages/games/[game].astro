@@ -1,0 +1,17 @@
+---
+import { games } from "../../data/games"
+import EmbedLayout from "../../layouts/EmbedLayout.astro";
+
+export function getStaticPaths() {
+    return games.map((game) => ({
+        params: {game: game.title},
+        props: {title: game.title, src: game.url}
+    }))
+}
+
+const { title, src } = Astro.props;
+---
+
+<EmbedLayout title={title} src={src}>
+
+</EmbedLayout>
