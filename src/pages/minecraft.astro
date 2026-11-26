@@ -1,0 +1,23 @@
+---
+import StandardLayout from "../layouts/StandardLayout.astro";
+import ButtonGrid from "../components/ButtonGrid.astro";
+
+const pages = [
+    {
+        title: "Server Map",
+        description: "A 3D map of the server, including political borders.",
+        image: "/src/icons/minecraft/map.png",
+        href: "/"
+    },
+    {
+        title: "World Downloads",
+        description: "Archives of the server's world from various dates.",
+        image: "/src/icons/minecraft/downloads.png",
+        href: "/"
+    }
+]
+---
+
+<StandardLayout title="Minecraft Server" tagline="explore our download our world!">
+    <ButtonGrid items={pages} imageHeight="64px" maxCols={2} minColWidth={256} />
+</StandardLayout>
